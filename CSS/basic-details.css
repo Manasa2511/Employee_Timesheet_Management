@@ -4,12 +4,16 @@
 }
 
 .main {
-    margin: 20px;
+    display:flex;
 }
 
 /*  basic details text start  */
-.basic-details {
+.basic-details-page {
     display: flex;
+    width: 80%;
+}
+.basic-details-main{
+    margin:15px 25px;
 }
 
 .basic-details-user {
@@ -31,23 +35,339 @@
     display: flex;
     justify-content: center;
     font-family: sans-serif;
+    margin: 18px 40px;
 }
 
 .basic-details-list a {
-    font-size: 17px;
-    float: left;
+    font-size: 15px;
     text-align: center;
     padding: 10px 18px;
     text-decoration: none;
     color: rgb(84, 132, 235);
     background-color: rgb(230, 227, 227);
-    margin:18px 4px 4px;
+    margin:0px 4px 4px;
     border-radius: 6px;
 }
 
 .basic-details-list a:hover {
     background-color: #332bdd;
     color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*  basic details list end  */
+/* basic details brief start */
+
+.basic-details-brief{
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 30px 0px;
+}
+.profile-details{
+    display: flex;
+    justify-content: space-between;
+}
+.user-profile{
+    display: flex;
+}
+.user-profile-img img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.user-profile-text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.employee-name{
+    color: rgb(30, 92, 226);
+    font-size: 40px;
+    font-family: cursive;
+    padding: 3px 0px 3px 0px;
+}
+.employee-id{
+    color: rgb(89, 136, 239);
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    padding-bottom: 4px;
+}
+.employee-mail{
+    font-family:sans-serif;
+    padding-bottom: 4px;
+    color: #666464;
+}
+.employee-contact{
+    font-family: sans-serif;
+    padding-bottom: 4px;
+    color: #666464;
+}
+.edit-profile i{
+    color: rgb(71, 118, 220);
+}
+.edit-profile button{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(66, 116, 223);
+    background: none;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 4px;
+}
+/* grid coloumn 1 starts */
+.user-details-brief{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    margin: 15px 0px;
+}
+.user-first-name-1{
+  font-family: sans-serif;
+  font-size: 17px;
+  padding: 4px 0px;
+}
+.user-first-name-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-contact-number-1{
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 4px 0px;
+}
+.user-contact-number-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-blood-group-1{
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 4px 0px;
+}
+.user-blood-group-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-emergency-contact-name-1{
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 4px 0px;
+}
+.user-emergency-contact-name-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-ofc-mail-1{
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 4px 0px;
+}
+.user-ofc-mail-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-checkin-time-1{
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 4px 0px;
+}
+.user-checkin-time-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-designation-1{
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 4px 0px;
+}
+.user-designation-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+/* grid column 1 end */
+/* grid column 2 starts */
+.user-last-name-1{
+font-family: sans-serif;
+font-size: 18px;
+padding: 4px 0px;
+}
+.user-last-name-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-pan-number-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+.user-pan-number-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-gender-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+.user-gender-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-relation-with-employe-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+.user-relation-with-employe-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-joining-date-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+.user-joining-date-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-checkout-time-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+.user-checkout-time-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-probation-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+.user-probation-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+/* grid column 2 end */
+/* grid column 3 starts */
+.user-personal-mail-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+
+.user-personal-mail-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-aadhar-number-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+
+.user-aadhar-number-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-birth-date-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+
+.user-birth-date-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-emergency-contact-no-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+
+.user-emergency-contact-no-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-reporting-manager-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+
+.user-reporting-manager-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-department-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+
+.user-department-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+.user-notice-period-1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 4px 0px;
+}
+
+.user-notice-period-2 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    padding: 4px 0px;
+}
+/* grid column 3 end */
+/* basic details brief end */
