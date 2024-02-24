@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0;
     top: 0;
 }
@@ -10,10 +10,10 @@
 /*  basic details text start  */
 .basic-details-page {
     display: flex;
-    width: 80%;
 }
 .basic-details-main{
     margin:15px 25px;
+    width: 80%;
 }
 
 .basic-details-user {
@@ -27,7 +27,9 @@
     font-weight: 800;
     padding-left: 10px;
 }
-
+.basic-details-text p{
+  margin: 0px;
+}
 /*  basic details text end  */
 
 /*  basic details list start  */
@@ -86,25 +88,29 @@
     flex-direction: column;
     padding-left: 10px;
 }
-.employee-name{
+.employee-name h6{
+    margin: 0px;
     color: rgb(30, 92, 226);
-    font-size: 40px;
+    font-size: 35px;
     font-family: cursive;
-    padding: 3px 0px 3px 0px;
+    padding: 0px 0px 3px 0px;
 }
-.employee-id{
+.employee-id p{
+    margin: 0px;
     color: rgb(89, 136, 239);
     font-family: sans-serif;
     font-size: 10px;
     font-weight: 800;
     padding-bottom: 4px;
 }
-.employee-mail{
-    font-family:sans-serif;
+.employee-mail p{
+    margin: 0px;
+    font-family: sans-serif;
     padding-bottom: 4px;
     color: #666464;
 }
-.employee-contact{
+.employee-contact p{
+    margin: 0px;
     font-family: sans-serif;
     padding-bottom: 4px;
     color: #666464;
@@ -125,248 +131,290 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
-    margin: 15px 0px;
+    margin: 15px 0px 0px;
 }
-.user-first-name-1{
+.user-first-name-1 h6{
   font-family: sans-serif;
-  font-size: 17px;
+  font-size: 12px;
   padding: 4px 0px;
+  margin: 0px;
 }
-.user-first-name-2 {
+.user-first-name-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
     padding: 4px 0px;
+    margin: 0px;
 }
-.user-contact-number-1{
+.user-contact-number-1 h6{
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   padding: 4px 0px;
+  margin: 0px;
 }
-.user-contact-number-2 {
+.user-contact-number-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
     padding: 4px 0px;
+    margin: 0px;
 }
-.user-blood-group-1{
+.user-blood-group-1 h6{
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   padding: 4px 0px;
+  margin: 0px;
 }
-.user-blood-group-2 {
+.user-blood-group-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
     padding: 4px 0px;
+    margin: 0px;
 }
-.user-emergency-contact-name-1{
+.user-emergency-contact-name-1 h6{
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   padding: 4px 0px;
+  margin: 0px;
 }
-.user-emergency-contact-name-2 {
+.user-emergency-contact-name-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
     padding: 4px 0px;
+    margin: 0px;
 }
-.user-ofc-mail-1{
+.user-ofc-mail-1 h6{
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   padding: 4px 0px;
+  margin: 0px;
 }
-.user-ofc-mail-2 {
+.user-ofc-mail-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
     padding: 4px 0px;
+    margin: 0px;
 }
-.user-checkin-time-1{
+.user-checkin-time-1 h6{
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   padding: 4px 0px;
+  margin: 0px;
 }
-.user-checkin-time-2 {
+.user-checkin-time-2 p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    margin: 0px;
+    padding: 4px 0px;
+}
+.user-designation-1 h6{
+  font-family: sans-serif;
+  font-size: 12px;
+  padding: 4px 0px;
+  margin: 0px;
+}
+.user-designation-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
     padding: 4px 0px;
-}
-.user-designation-1{
-  font-family: sans-serif;
-  font-size: 18px;
-  padding: 4px 0px;
-}
-.user-designation-2 {
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
+    margin: 0px;
 }
 /* grid column 1 end */
 /* grid column 2 starts */
-.user-last-name-1{
+.user-last-name-1 h6{
 font-family: sans-serif;
-font-size: 18px;
+font-size: 12px;
+margin: 0px;
 padding: 4px 0px;
 }
-.user-last-name-2 {
+.user-last-name-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-pan-number-1 {
+.user-pan-number-1 h6{
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-pan-number-2 {
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
-}
-.user-gender-1 {
-    font-family: sans-serif;
-    font-size: 18px;
-    padding: 4px 0px;
-}
-.user-gender-2 {
+.user-pan-number-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-relation-with-employe-1 {
+.user-gender-1 h6{
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-relation-with-employe-2 {
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
-}
-.user-joining-date-1 {
-    font-family: sans-serif;
-    font-size: 18px;
-    padding: 4px 0px;
-}
-.user-joining-date-2 {
+.user-gender-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-checkout-time-1 {
+.user-relation-with-employe-1 h6{
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-checkout-time-2 {
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
-}
-.user-probation-1 {
-    font-family: sans-serif;
-    font-size: 18px;
-    padding: 4px 0px;
-}
-.user-probation-2 {
+.user-relation-with-employe-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
+    margin: 0px;
+    padding: 4px 0px;
+}
+.user-joining-date-1 h6{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 4px 0px;
+}
+.user-joining-date-2 p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    margin: 0px;
+    padding: 4px 0px;
+}
+.user-checkout-time-1 h6{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 4px 0px;
+}
+.user-checkout-time-2 p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    margin: 0px;
+    padding: 4px 0px;
+}
+.user-probation-1 h6{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 4px 0px;
+}
+.user-probation-2 p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    margin: 0px;
     padding: 4px 0px;
 }
 /* grid column 2 end */
 /* grid column 3 starts */
-.user-personal-mail-1 {
+.user-personal-mail-1 h6{
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     padding: 4px 0px;
+    margin: 0px;
 }
 
-.user-personal-mail-2 {
+.user-personal-mail-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-aadhar-number-1 {
+.user-aadhar-number-1 h6{
     font-family: sans-serif;
-    font-size: 18px;
-    padding: 4px 0px;
-}
-
-.user-aadhar-number-2 {
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
-}
-.user-birth-date-1 {
-    font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+    margin: 0px;
     padding: 4px 0px;
 }
 
-.user-birth-date-2 {
+.user-aadhar-number-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-emergency-contact-no-1 {
+.user-birth-date-1 h6{
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+    margin: 0px;
     padding: 4px 0px;
 }
 
-.user-emergency-contact-no-2 {
+.user-birth-date-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-reporting-manager-1 {
+.user-emergency-contact-no-1 h6{
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+    margin: 0px;
     padding: 4px 0px;
 }
 
-.user-reporting-manager-2 {
+.user-emergency-contact-no-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-department-1 {
+.user-reporting-manager-1 h6{
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+    margin: 0px;
     padding: 4px 0px;
 }
 
-.user-department-2 {
+.user-reporting-manager-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
+    margin: 0px;
     padding: 4px 0px;
 }
-.user-notice-period-1 {
+.user-department-1 h6{
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+    margin: 0px;
     padding: 4px 0px;
 }
 
-.user-notice-period-2 {
+.user-department-2 p{
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
+    margin: 0px;
+    padding: 4px 0px;
+}
+.user-notice-period-1 h6{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 4px 0px;
+}
+
+.user-notice-period-2 p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    margin: 0px;
     padding: 4px 0px;
 }
 /* grid column 3 end */
