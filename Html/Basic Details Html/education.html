@@ -17,46 +17,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font awesome 6.5.0 cdn -->
     <title>Education</title>
-    <style>
-        .table-div{
-    width: 100%;
-    height: 100%;
-}
-table{
-    width: 100%;
-    height: 100%;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    margin-top:20px;
-}
-th{
-    background-color: #EBEEFD;
-    color: #2b4eda;
-}
-td{
-    text-align: center;
-}
-td i{
-    background-color:#7A98F4;
-    color:#fff ;
-    padding: 10px;
-    border-radius: 20px;
-}
-td button{
-  border: none !important;
-  background-color: #C4DDFC;
-  padding: 8px 50px;
-  border-radius: 30px;
-  font-family: "Lato", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  color: #2b4eda;
-}
-    </style>
 </head>
 
 <body>
-    <div class="main">
+    <div class="education-main">
         <div class="sidebar">
             <div class="sidebar-ofcname">
                 <h3 class="sidebar-ofcname-head"> Techiebears</h3>
@@ -130,8 +94,90 @@ td button{
                 <a href="../Basic Details Html/family-details.html">Family Details</a>
             </div>
             <!-- basic details list end -->
+            <!-- documents list -->
+            <div class="education-list-main">
+                <div class="education-list">
+                    <div class="education-list-para">
+                        <div class="education-list-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+                        <div class="education-list-text">
+                            <p>Educational Documents</p>
+                        </div>
+                    </div>
+                    <div class="add-education">
+                        <button type="button" id="openBtn">Add Documents <i class="fa-solid fa-file-invoice"></i></button>
+                    </div>
+                </div>
+                <div class="education-brief">
+                    <table class="education-brief-table">
+                        <tr class="education-brief-head">
+                            <th class="education-empid">Empid </th>
+                            <th class="education-name">education Name </th>
+                            <th class="education-type">education Type</th>
+                            <th class="education-uplode-date">Uplode Date </th>
+                            <th class="education-view-file">View File </th>
+                        </tr>
+                        <tr>
+                            <td class="emp-education-empid-1">E0008</td>
+                            <td class="emp-education-name-1">wrfg</td>
+                            <td class="emp-education-type-1">aadhar card</td>
+                            <td class="emp-education-uplode-date-1">13/02/2024</td>
+                            <td class="emp-education-view-file-1">View</td>
+                        </tr>
+                        <tr>
+                            <td class="emp-education-empid-2">E0008</td>
+                            <td class="emp-education-name-2">wrfg</td>
+                            <td class="emp-education-type-2">aadhar card</td>
+                            <td class="emp-education-uplode-date-2">13/02/2024</td>
+                            <td class="emp-education-view-file-2">View</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- educations list -->
         </div>
     </div>
+    <!-- POP UP -->
+    
+    <div id="popupForm" class="form-popup">
+        <form action="/submit" class="form-container">
+            <h2 class="form-head fs-kanit">Add Documents</h2>
+            <hr>
+            <div class="form-body-part">
+                <div class="emp-id">
+                    <p>EmployeeID : </p>
+                </div>
+                <div class="input-leave-duration">
+                    <form action="#">
+                        <label for="">Document Type :</label>
+                        <select name="document-type" class="select-option">
+                            <option value="options">options..</option>
+                            <option value="10th-marksheet">10th_Marksheet</option>
+                            <option value="12th-marksheet">12th_Marksheet</option>
+                            <option value="graduation-certicate">Graduation_Certificate</option>
+                            <option value="masters">Masters</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="document-information">
+                    <label for="">Document Information: </label>
+                    <input type="text" placeholder="Marksheet, Election Card">
+                </div>
+                <form action="#">
+                    <label for="fileInput">Document:</label>
+                    <input type="file" id="fileInput" name="fileInput" class="file-input">
+                </form>
+            </div>
+            <div class="submit-close-btns">
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" id="closeBtn">Close</button>
+            </div>
+        </form>
+    
+    </div>
+    <script src="/JS/applyleave.js"></script>
+    <!-- POP UP -->
 </body>
 
 </html>

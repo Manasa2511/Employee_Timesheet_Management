@@ -21,7 +21,7 @@
 
 <body>
 
-    <div class="main">
+    <div class="document-main" id="document-main">
         <div class="sidebar">
             <div class="sidebar-ofcname">
                 <h3 class="sidebar-ofcname-head"> Techiebears</h3>
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                     <div class="add-document">
-                        <button type="button">Add Document <i class="fa-solid fa-file-invoice"></i></button>
+                        <button type="button" id="openBtn">Add Document <i class="fa-solid fa-file-invoice"></i></button>
                     </div>
                 </div>
                 <div class="document-brief">
@@ -139,7 +139,44 @@
             <!-- documents list -->
        </div>
     </div>
-
+    <!-- POP UP -->
+    
+    <div id="popupForm" class="form-popup">
+        <form action="/submit" class="form-container">
+            <h2 class="form-head fs-kanit">Add Documents</h2>
+            <hr>
+            <div class="form-body-part">
+                <div class="emp-id">
+                    <p>EmployeeID : </p>
+                </div>
+                <div class="input-leave-duration">
+                    <form action="#">
+                        <label for="">Document Type :</label>
+                        <select name="document-type" class="select-option">
+                            <option value="options">options..</option>
+                            <option value="10th-marksheet">10th_Marksheet</option>
+                            <option value="12th-marksheet">12th_Marksheet</option>
+                            <option value="graduation-certicate">Graduation_Certificate</option>
+                            <option value="masters">Masters</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="document-information">
+                    <label for="">Document Information: </label>
+                    <input type="text" placeholder="Marksheet, Election Card">
+                </div>
+                <form action="#" >
+                    <label for="fileInput">Document:</label>
+                    <input type="file" id="fileInput" name="fileInput" class="file-input">
+                </form>
+            </div>
+            <div class="submit-close-btns">
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" id="closeBtn">Close</button>
+            </div>
+        </form>
+        
+    </div>
+    <script src="/JS/applyleave.js"></script>
+    <!-- POP UP -->
 </body>
-
-</html>
