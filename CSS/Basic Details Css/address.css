@@ -1,0 +1,141 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.main {
+    display: flex;
+}
+/*  basic details text start  */
+.basic-details-page {
+    display: flex;
+}
+
+.basic-details-main {
+    margin: 15px 25px;
+    width: 80%;
+}
+
+.basic-details-user {
+    font-size: 22px;
+    color: rgb(84, 132, 235);
+}
+
+.basic-details-text {
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+.basic-details-text p {
+    margin: 0px;
+}
+/*  basic details text end  */
+
+/*  basic details list start  */
+.basic-details-list {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: 18px 40px;
+}
+
+.basic-details-list a {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: rgb(84, 132, 235);
+    background-color: rgb(230, 227, 227);
+    margin: 0px 4px 4px;
+    border-radius: 6px;
+}
+
+.basic-details-list a:hover {
+    background-color: #332bdd;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*  basic details list end  */
+/* address details */
+.address-details-main {
+    background-color: #fff;
+    box-shadow: 25px 25px 25px 25px rgba(161, 159, 159, 0.3);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 30px 0px;
+}
+
+.address-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-details-para {
+    display: flex;
+}
+
+.address-details-icon {
+    font-size: 23px;
+    color: rgb(84, 132, 235);
+}
+
+.address-details-text p {
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.address-edit-button i {
+    color: rgb(71, 118, 220);
+}
+
+.address-edit-button button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(66, 116, 223);
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+/* address details */
+/* input address start */
+.input-address-text p{
+   font-family: sans-serif;
+   font-size: 16px;
+}
+.input-address-para p{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #B1B2B8;
+}
+/* input address  end*/
+/* address brief start*/
+.address-brief {
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+th {
+    padding: 10px;
+    text-align: start;
+}
+
+td {
+    padding: 10px;
+    color: #B1B2B8;
+}
+
+/* address brief end*/
+/* documents list */
