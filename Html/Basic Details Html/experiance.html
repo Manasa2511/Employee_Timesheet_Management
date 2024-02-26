@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="experiance-main">
         <div class="sidebar">
             <div class="sidebar-ofcname">
                 <h3 class="sidebar-ofcname-head"> Techiebears</h3>
@@ -94,6 +94,50 @@
                 <a href="../Basic Details Html/family-details.html">Family Details</a>
             </div>
             <!-- basic details list end -->
+            <!-- experiance list -->
+            <div class="experiance-list-main">
+                <div class="experiance-list">
+                    <div class="experiance-list-para">
+                        <div class="experiance-list-icon">
+                            <i class="fa-solid fa-calendar-week"></i>
+                        </div>
+                        <div class="experiance-list-text">
+                            <p>Experiance Letter</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="experianceForm" class="experiance-form">
+                    <form action="/submit" class="form-container">
+                        <h2 class="form-head fs-kanit">Add Documents</h2>
+                        <hr>
+                        <div class="form-body-part">
+                            <div class="emp-id">
+                                <p>EmployeeID : </p>
+                            </div>
+                            <div class="input-leave-duration">
+                                <div class="input-date">
+                                    <label for="">Date :</label>
+                                    <input type="date" name="" id="">
+                                </div>
+                            </div>
+                            <div class="document-information">
+                                <label for="">Document Information: </label>
+                                <input type="text" placeholder="Marksheet, Election Card">
+                            </div>
+                            <form action="#">
+                                <label for="fileInput">Document:</label>
+                                <input type="file" id="fileInput" name="fileInput" class="file-input">
+                            </form>
+                        </div>
+                        <div class="submit-close-btns">
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="button" class="btn cancel" id="closeBtn">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- experiance list -->
         </div>
     </div>
 </body>
