@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.salary-slips-body{
+    width: 80%;
+    margin: 20px 20px 20px 0;
+}
+.salary-heading a{
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000;
+    font-size: 25px;
+    text-decoration: none;
+}
+.salary-heading i{
+    color: #2b4eda;
+    font-size: 20px;
+}
