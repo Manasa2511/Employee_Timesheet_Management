@@ -20,59 +20,123 @@
 </head>
 
 <body>
-    
-        <div class="main">
-            <div class="sidebar">
-                <div class="sidebar-ofcname">
-                    <h3 class="sidebar-ofcname-head"> Techiebears</h3>
-    
-                </div>
-                <hr>
-                <div class="sidebar-profile">
-                    <div class="sidebar-profile-img ">
-                        <img src="../img/profile.jpg" alt="">
-                    </div>
-                    <div class="sidebar-profile-name">
-                        <h6>Alexdar noel</h6>
-                        <p>Employee</p>
-                        <hr>
-                    </div>
-                    <div class="sidebar-menus">
-                        <div class="dashboard flex-center grey-bg-hover">
-                            <i class="fa-sharp fa-solid fa-table-columns"></i>
-                            <a href="../Html/dashboard.html">Dashboard</a>
-                        </div>
-                        <div class="attendance flex-center grey-bg-hover">
-                            <i class="fa-regular fa-calendar"></i>
-                            <a href="../Html/attendance.html">Attendance</a>
-                        </div>
-                        <div class="leaves flex-center grey-bg-hover">
-                            <i class="fa-solid fa-person-walking-luggage"></i>
-                            <a href="../Html/leaves.html">Leaves</a>
-                        </div>
-                        <div class="basic-details flex-center grey-bg-hover">
-                            <i class="fa-regular fa-address-card"></i>
-                            <a href="/Html/Basic Details Html/basic-details.html">Basic Details</a>
-                        </div>
-                        <div class="holidays flex-center grey-bg-hover">
-                            <i class="fa-regular fa-calendar-xmark"></i>
-                            <a href="../Html/holidays.html">Holidays</a>
-                        </div>
-                        <div class="salary-slip flex-center grey-bg-hover">
-                            <i class="fa-solid fa-toilet-paper"></i>
-                            <a href="../Html/salary-slips.html">Salary Slips</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="salary-slips-main">
+        <div class="sidebar">
+            <div class="sidebar-ofcname">
+                <h3 class="sidebar-ofcname-head"> Techiebears</h3>
+
             </div>
-            <div class="salary-slips-body">
-                <div class="salary-heading">
-                    <i class="fa-solid fa-toilet-paper"></i>
-                     <a href="#">Salary Slip</a>
-                </div> 
+            <hr>
+            <div class="sidebar-profile">
+                <div class="sidebar-profile-img ">
+                    <img src="../img/profile.jpg" alt="">
+                </div>
+                <div class="sidebar-profile-name">
+                    <h6>Alexdar noel</h6>
+                    <p>Employee</p>
+                    <hr>
+                </div>
+                <div class="sidebar-menus">
+                    <div class="dashboard flex-center grey-bg-hover">
+                        <i class="fa-sharp fa-solid fa-table-columns"></i>
+                        <a href="../Html/dashboard.html">Dashboard</a>
+                    </div>
+                    <div class="attendance flex-center grey-bg-hover">
+                        <i class="fa-regular fa-calendar"></i>
+                        <a href="../Html/attendance.html">Attendance</a>
+                    </div>
+                    <div class="leaves flex-center grey-bg-hover">
+                        <i class="fa-solid fa-person-walking-luggage"></i>
+                        <a href="../Html/leaves.html">Leaves</a>
+                    </div>
+                    <div class="basic-details flex-center grey-bg-hover">
+                        <i class="fa-regular fa-address-card"></i>
+                        <a href="/Html/Basic Details Html/basic-details.html">Basic Details</a>
+                    </div>
+                    <div class="holidays flex-center grey-bg-hover">
+                        <i class="fa-regular fa-calendar-xmark"></i>
+                        <a href="../Html/holidays.html">Holidays</a>
+                    </div>
+                    <div class="salary-slip flex-center grey-bg-hover">
+                        <i class="fa-solid fa-toilet-paper"></i>
+                        <a href="../Html/salary-slips.html">Salary Slips</a>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="salary-slips-body">
+            <div class="salary-slip-main-div">
+                <div class="salary-heading">
+                    <i class="fa-solid fa-toilet-paper"></i>
+                    <a href="#">Salary Slip</a>
+                </div>
+                <table>
+                    <tr>
+                        <th colspan="2">Employee Information</th>
+                    </tr>
+                    <tr>
+                        <td>Employee Name:</td>
+                        <td><input type="text" id="employeeName" value="John Doe"></td>
+                    </tr>
+                    <tr>
+                        <td>Employee ID:</td>
+                        <td><input type="text" id="employeeID" value="123456"></td>
+                    </tr>
+                    <tr>
+                        <td>Department:</td>
+                        <td><input type="text" id="department" value="Engineering"></td>
+                    </tr>
+                    <tr>
+                        <td>Month:</td>
+                        <td><input type="text" id="month" value="January 2024"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Earnings</th>
+                    </tr>
+                    <tr>
+                        <td>Basic Salary:</td>
+                        <td><input type="number" id="basicSalary" value="5000"></td>
+                    </tr>
+                    <tr>
+                        <td>Bonus:</td>
+                        <td><input type="number" id="bonus" value="1000"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Deductions</th>
+                    </tr>
+                    <tr>
+                        <td>Taxes:</td>
+                        <td><input type="number" id="taxes" value="500"></td>
+                    </tr>
+                    <tr>
+                        <td>Insurance:</td>
+                        <td><input type="number" id="insurance" value="200"></td>
+                    </tr>
+                    <tr>
+                        <th>Total Salary:</th>
+                        <td class="total" id="totalSalary"></td>
+                    </tr>
+                </table>
+                <button onclick="calculateTotal()">Calculate Total</button>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        function calculateTotal() {
+            var basicSalary = parseFloat(document.getElementById('basicSalary').value);
+            var bonus = parseFloat(document.getElementById('bonus').value);
+            var taxes = parseFloat(document.getElementById('taxes').value);
+            var insurance = parseFloat(document.getElementById('insurance').value);
+
+            var totalEarnings = basicSalary + bonus;
+            var totalDeductions = taxes + insurance;
+            var netSalary = totalEarnings - totalDeductions;
+
+            document.getElementById('totalSalary').innerText = netSalary.toFixed(2);
+        }
+    </script>
 </body>
 
 </html>
+   

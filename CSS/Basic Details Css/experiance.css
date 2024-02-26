@@ -96,14 +96,9 @@ body {
 /* experiance-form */
 
 /* experiance-form container - hidden by default */
-.experiance-form {
+.form-popup {
     padding: 20px;
 }
-
-::placeholder {
-    padding-left: 10px;
-}
-
 /* Styles for the form container */
 .form-container {
     max-width: 100%;
@@ -112,43 +107,61 @@ body {
     font-style: normal;
     font-size: 14px;
 }
-
-.fs-kanit {
-    font-family: "Kanit", sans-serif;
-    font-style: normal;
+.form-body-part-1{
+    display: flex;
+    width: 100%;
 }
-
-.fs-latin {
-    font-family: "Lato", sans-serif;
-    font-style: normal;
+.form-body-part-2 {
+    display: flex;
+    width: 100%;
 }
-
-.form-container h2 {
-    color: #596ec0;
-    font-size: 20px;
-    margin: 0;
-    font-weight: 400;
-    text-align: left;
-}
-
 /* Full-width input fields */
 .form-container input[type="text"] {
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0 15px 0;
-    background: #fffcfc;
-    /* border-color:#7a98f4 ; */
+    margin: 0px 0 26px 0;
     border: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom: 1px dotted #5b80ee;
+    width: 95%;
 }
 
+.company-name {
+    width: 50%;
+    flex-direction: column;
+}
+
+.company-name p {
+    margin: 0 0 10px 0;
+}
+.emp-position {
+    width: 50%;
+}
+.input-leave-duration {
+    display: flex;
+    width: 50%;
+    margin: 0 0 10px 0;
+    flex-direction: column;
+}
+.form-container input[type="date"] {
+    margin: 0 0 26px 0;
+    border: none ;
+    border-bottom: 1px dotted #5b80ee;
+    font-family: "Kanit", sans-serif;
+    width: 95%;
+}
+.upload-document{
+    display: flex;
+    flex-direction: column;
+}
+.upload-document input[type="file"]{
+    border-bottom: 1px dotted #5b80ee;
+    margin: 7px 0 0 0;
+    padding-bottom: 7px;
+}
 /* Form buttons */
 .form-container .btn {
     color: #1848d6;
-    padding: 10px 0px;
+    padding: 10px 24px;
     border: none;
     cursor: pointer;
-    width: 20%;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -173,36 +186,8 @@ body {
 .open-button:hover {
     opacity: 1;
 }
-
-.emp-id {
-    display: flex;
-}
-
-.emp-id p {
-    margin: 0 0 10px 0;
-}
-
-.input-leave-duration {
-    display: flex;
-    margin: 0 0 10px 0;
-}
-
-.input-leave-duration input {
-    margin: 0 5px;
-}
-
-.input-date {
-    margin: 0 0 10px 0;
-}
-
-.form-container input[type="date"] {
-    /* border-color:#7a98f4 ; */
-    border: none !important;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 5px;
-}
-
 .submit-close-btns {
     display: flex;
     justify-content: end;
+    margin-top: 10px;
 }

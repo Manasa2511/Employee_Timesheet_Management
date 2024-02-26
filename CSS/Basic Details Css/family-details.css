@@ -3,7 +3,7 @@ body {
     padding: 0px;
 }
 
-.main {
+.family-details-main {
     display: flex;
 }
 
@@ -61,3 +61,128 @@ body {
 }
 
 /*  basic details list end  */
+/* family details list */
+.family-details-list-main {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 30px 0px;
+}
+
+.family-details-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.family-details-list-para {
+    display: flex;
+}
+
+.family-details-list-icon {
+    font-size: 23px;
+    color: rgb(84, 132, 235);
+}
+
+.family-details-list-text p {
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+/* family details list */
+/* family details-form */
+
+/* family details-form container - hidden by default */
+.form-popup {
+    padding: 20px;
+}
+
+/* Styles for the form container */
+.form-container {
+    max-width: 100%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.form-body-part-1 {
+    display: flex;
+    width: 100%;
+}
+
+.form-body-part-2 {
+    display: flex;
+    width: 100%;
+}
+.form-body-part-3 {
+    display: flex;
+    width: 100%;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"] {
+    margin: 0px 0 26px 0;
+    border: none;
+    border-bottom: 1px dotted #5b80ee;
+    width: 95%;
+}
+
+.company-name {
+    width: 50%;
+    flex-direction: column;
+}
+
+.company-name p {
+    margin: 0 0 10px 0;
+}
+
+.emp-position {
+    width: 50%;
+}
+
+.input-leave-duration {
+    display: flex;
+    width: 50%;
+    margin-top: 2px;    
+    flex-direction: column;
+}
+/* Form buttons */
+.form-container .btn {
+    color: #1848d6;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 5px;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+/* Close button */
+.form-container .cancel {
+    color: red;
+}
+
+/* Hover effect on buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.submit-close-btns {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="family-details-main">
         <div class="sidebar">
             <div class="sidebar-ofcname">
                 <h3 class="sidebar-ofcname-head"> Techiebears</h3>
@@ -86,6 +86,68 @@
                 <a href="../Basic Details Html/family-details.html">Family Details</a>
             </div>
             <!-- basic details list end -->
+            <!-- family details list -->
+            <div class="family-details-list-main">
+                <div class="family-details-list">
+                    <div class="family-details-list-para">
+                        <div class="family-details-list-icon">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </div>
+                        <div class="family-details-list-text">
+                            <p>Family Details </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="popupForm" class="form-popup">
+                    <form action="/submit" class="form-container">
+                        <div class="form-body-part">
+                            <div class="form-body-part-1">
+                                <div class="company-name">
+                                    <label for="">Father's Name</label>
+                                    <input type="text" name="" id="" placeholder="Father's Name">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Father's Occupation </label>
+                                    <input type="text" name="" id="" placeholder="null">
+                                </div>
+                            </div>
+                            <div class="form-body-part-2">
+                                <div class="emp-position">
+                                    <label for="">Father's Contact Number</label>
+                                    <input type="text" placeholder="null">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Mother's Name</label>
+                                    <input type="text" name="" id="" placeholder="Mother's Name">
+                                </div>
+                            </div>
+                            <div class="form-body-part-3">
+                                <div class="emp-position">
+                                    <label for="">Mother's Occupation</label>
+                                    <input type="text" placeholder="null">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Mother's Contact Number</label>
+                                    <input type="text" name="" id="" placeholder="null">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="marriage-status">
+                            <label for="">Marriage Status: </label>
+                            <input type="radio" id="unmarried" name="marriage-status" value="unmarried">
+                            <label for="unmarried">Unmarried</label>
+                            <input type="radio" id="married" name="marriage-status" value="married">
+                            <label for="married">Married</label>
+                        </div>
+                        <div class="submit-close-btns">
+                            <button type="submit" class="btn">Upload <i class="fa-solid fa-upload"></i></button>
+                            <button type="button" class="btn cancel" id="closeBtn">Cancle <i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- family details list -->
         </div>
     </div>
 </body>

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="bank-details-main">
         <div class="sidebar">
             <div class="sidebar-ofcname">
                 <h3 class="sidebar-ofcname-head"> Techiebears</h3>
@@ -86,6 +86,61 @@
                 <a href="../Basic Details Html/family-details.html">Family Details</a>
             </div>
             <!-- basic details list end -->
+            <!-- bank details list -->
+            <div class="bank-details-list-main">
+                <div class="bank-details-list">
+                    <div class="bank-details-list-para">
+                        <div class="bank-details-list-icon">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <div class="bank-details-list-text">
+                            <p>Bank Details </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="popupForm" class="form-popup">
+                    <form action="/submit" class="form-container">
+                        <div class="form-body-part">
+                            <div class="form-body-part-1">
+                                <div class="company-name">
+                                    <label for="">Bank Name</label>
+                                    <input type="text" name="" id="" placeholder="Bank Name">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Account Number </label>
+                                    <input type="text" name="" id="" placeholder="Account Number">
+                                </div>
+                            </div>
+                            <div class="form-body-part-2">
+                                <div class="emp-position">
+                                    <label for="">Account Type</label>
+                                    <input type="text" placeholder="Account Type">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Account Holder Name</label>
+                                    <input type="text" name="" id="" placeholder="Account Holder Name">
+                                </div>
+                            </div>
+                            <div class="form-body-part-3">
+                                <div class="emp-position">
+                                    <label for="">IFSC Code</label>
+                                    <input type="text" placeholder="IFSC Code">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Branch Name</label>
+                                    <input type="text" name="" id="" placeholder="Branch Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-close-btns">
+                            <button type="submit" class="btn">Upload <i class="fa-solid fa-upload"></i></button>
+                            <button type="button" class="btn cancel" id="closeBtn">Cancle <i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- bank details list -->
         </div>
     </div>
 </body>
