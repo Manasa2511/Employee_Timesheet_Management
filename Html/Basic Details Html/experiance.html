@@ -98,32 +98,37 @@
                         </div>
                     </div>
                 </div>
-                <div id="experianceForm" class="experiance-form">
-                    <form action="/submit" class="form-container">
-                        <h2 class="form-head fs-kanit">Add Documents</h2>
-                        <hr>
-                        <div class="form-body-part">
-                            <div class="emp-id">
-                                <p>EmployeeID : </p>
-                            </div>
-                            <div class="input-leave-duration">
-                                <div class="input-date">
-                                    <label for="">Date :</label>
+                <div id="popupForm" class="form-popup" >
+                    <form action="/submit" class="form-container" >
+                        <div class="form-body-part" >
+                            <div class="form-body-part-1">
+                                <div class="company-name">
+                                    <label for="">Company Name</label>
+                                    <input type="text" name="" id="" placeholder="Company Name">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Joining Date </label>
                                     <input type="date" name="" id="">
                                 </div>
                             </div>
-                            <div class="document-information">
-                                <label for="">Document Information: </label>
-                                <input type="text" placeholder="Marksheet, Election Card">
+                            <div class="form-body-part-2">
+                                <div class="emp-position">
+                                    <label for="">Position</label>
+                                    <input type="text" placeholder="Position">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Leaving Date</label>
+                                    <input type="date" name="" id="">
+                                </div>
                             </div>
-                            <form action="#">
-                                <label for="fileInput">Document:</label>
-                                <input type="file" id="fileInput" name="fileInput" class="file-input">
-                            </form>
+                        </div>
+                        <div class="upload-document">
+                            <label for="fileInput">Upload Document</label>
+                            <input type="file" id="fileInput" name="fileInput" class="file-input">
                         </div>
                         <div class="submit-close-btns">
-                            <button type="submit" class="btn">Submit</button>
-                            <button type="button" class="btn cancel" id="closeBtn">Close</button>
+                            <button type="submit" class="btn">Upload <i class="fa-solid fa-upload"></i></button>
+                            <button type="button" class="btn cancel" id="closeBtn">Cancle <i class="fa-solid fa-xmark"></i></button>
                         </div>
                     </form>
                 </div>
@@ -132,6 +137,7 @@
             <!-- experiance list -->
         </div>
     </div>
+    <script src="/JS/applyleave.js"></script>
 </body>
 
 </html>
