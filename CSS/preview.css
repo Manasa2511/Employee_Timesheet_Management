@@ -1,15 +1,17 @@
-body{
+body {
     margin: 0;
 }
-.salary-slips-main{
+
+.salary-slips-main {
     display: flex;
     justify-content: space-between;
 }
-.salary-slips-body{
-    width: 80%;
+
+.salary-slips-body {
     margin: 15px 20px 10px 0;
 }
-.salary-heading a{
+
+.salary-heading a {
     font-family: "Kanit", sans-serif;
     font-weight: 630;
     font-style: normal;
@@ -17,13 +19,15 @@ body{
     font-size: 25px;
     text-decoration: none;
 }
-.salary-heading i{
+
+.salary-heading i {
     color: #2b4eda;
     font-size: 20px;
 }
+
 /* salary slip main */
 .salary-slip-main-div {
-    max-width: 610px;
+    width: 50%;
     font-family: Arial, sans-serif;
     margin: 5px auto 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -47,8 +51,9 @@ td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
-td input{
-    border:2px dotted #5b80ee;
+
+td input {
+    border: 2px dotted #5b80ee;
     color: #5f5c5c;
 }
 
@@ -62,13 +67,15 @@ th {
     text-align: right;
     font-weight: bold;
 }
-.calculate-total button{
+
+.calculate-total button {
     padding: 5px 17px;
     background-color: #fff;
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .preview-btn button {
     padding: 5px 17px;
     background-color: #fff;
@@ -76,8 +83,10 @@ th {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.buttons{
-    display:flex ;
+
+.buttons {
+    display: flex;
     justify-content: space-between;
 }
+
 /* salary slip main */
