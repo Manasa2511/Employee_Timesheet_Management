@@ -5,7 +5,19 @@ body{
 .document-main {
     display: flex;
 }
-
+.logout{
+    position: relative;
+    left: 79%;
+    height: 100%;
+    color: #fff;
+}
+.logout button{
+    border: none;
+    background-color: #E17576;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
 /*  basic details text start  */
 .basic-details-page {
     display: flex;

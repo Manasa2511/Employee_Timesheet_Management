@@ -2,7 +2,19 @@ body {
     margin: 0;
     top: 0;
 }
-
+.logout{
+    position: relative;
+    left: 79%;
+    height: 100%;
+    color: #fff;
+}
+.logout button{
+    border: none;
+    background-color: #E17576;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
 .main {
     display:flex;
 }
