@@ -65,22 +65,22 @@
             </div>
         </div>
         <div class="salary-slips-body">
+            <div class="salary-heading">
+                <i class="fa-solid fa-toilet-paper"></i>
+                <a href="#">Salary Slip</a>
+            </div>
             <div class="salary-slip-main-div">
-                <div class="salary-heading">
-                    <i class="fa-solid fa-toilet-paper"></i>
-                    <a href="#">Salary Slip</a>
-                </div>
                 <table>
                     <tr>
                         <th colspan="2">Employee Information</th>
                     </tr>
                     <tr>
                         <td>Employee Name:</td>
-                        <td><input type="text" id="employeeName" value="John Doe"></td>
+                        <td><input type="text" id="employeeName" value="Alexdar noel"></td>
                     </tr>
                     <tr>
                         <td>Employee ID:</td>
-                        <td><input type="text" id="employeeID" value="123456"></td>
+                        <td><input type="text" id="employeeID" value="E0008"></td>
                     </tr>
                     <tr>
                         <td>Department:</td>
@@ -117,7 +117,14 @@
                         <td class="total" id="totalSalary"></td>
                     </tr>
                 </table>
-                <button onclick="calculateTotal()">Calculate Total</button>
+                <div class="buttons">
+                    <div class="calculate-total">
+                        <button onclick="calculateTotal()">Calculate Total</button>
+                    </div>
+                    <div class="preview-btn">
+                        <button onclick=""><a href="../Html/preview.html">Preview</a></button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -139,4 +146,5 @@
 </body>
 
 </html>
+
    
