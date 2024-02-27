@@ -9,17 +9,37 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.attendance-list-head a{
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    color: #000;
-    font-size: 25px;
-    text-decoration: none;
+.logout{
+    position: relative;
+    left: 79%;
+    height: 100%;
+    color: #fff;
 }
-.attendance-list-head i{
-    color: #2b4eda;
-    font-size: 20px;
+.logout button{
+    border: none;
+    background-color: #E17576;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
+.attendance-list-head {
+    display: flex;
+    align-items: center;
+}
+.attendance-icon{
+    font-size: 22px;
+    color: rgb(84, 132, 235);
+}
+
+.attendance-head {
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+.attendance head p {
+    margin: 0px;
 }
 .main-table{
     padding: 20px;

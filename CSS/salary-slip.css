@@ -1,6 +1,19 @@
 body{
     margin: 0;
 }
+.logout{
+    position: relative;
+    left: 79%;
+    height: 100%;
+    color: #fff;
+}
+.logout button{
+    border: none;
+    background-color: #E17576;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
 .salary-slips-main{
     display: flex;
     justify-content: space-between;
