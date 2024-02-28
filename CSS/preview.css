@@ -104,5 +104,22 @@ th {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
     top: 49px;
-    left: 47%;
+    left: 70%;
+}
+.back-btn button{
+    justify-content: center;
+    padding: 7px 27px;
+    background-color: #fff;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    top: 17px;
+    left: 23%;
+}
+.back-btn button a{
+    text-decoration: none;
+    color: #000;
 }
