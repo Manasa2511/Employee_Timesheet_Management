@@ -1,19 +1,17 @@
 body{
     margin: 0;
 }
-.logout{
-    position: relative;
-    left: 79%;
-    height: 100%;
-    color: #fff;
-}
-.logout button{
+.salary-slip-heading-part{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logout button{
     border: none;
-    background-color: #E17576;
-    padding: 10px;
-    color: #fff;
-    border-radius: 20px;
-}
+      background-color: #E17576;
+      padding: 10px;
+      color: #fff;
+      border-radius: 20px;
+  }
 .salary-slips-main{
     display: flex;
     justify-content: space-between;
@@ -38,7 +36,7 @@ body{
 .salary-slip-main-div {
     max-width: 610px;
     font-family: Arial, sans-serif;
-    margin: 5px auto 0;
+    margin: 25px auto 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 30px;
     border-radius: 5px;
@@ -92,5 +90,9 @@ th {
 .buttons{
     display:flex ;
     justify-content: space-between;
+}
+.preview-btn a{
+    text-decoration: none;
+    color: #000;
 }
 /* salary slip main */

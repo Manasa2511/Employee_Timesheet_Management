@@ -5,20 +5,16 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.logout{
-  position: relative;
-  left: 79%;
-  background-color: #E17576;
-  height: 100%;
-  padding: 10px;
-  border-radius: 20px;
-  color: #fff;
+.holidays-heading-part{
+  display: flex;
+  justify-content: space-between;
 }
 .logout button{
   border: none;
-  background-color: #E17576;
-  padding: 10px;
-  border-radius: 20px;
+    background-color: #E17576;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
 }
 .holidays-main-div{
     width: 80%;
