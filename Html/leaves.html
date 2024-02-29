@@ -73,8 +73,15 @@
                     <a href="#">Leaves</a>
                 </div>
                 <div class="logout">
-                    <button> <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    <button onclick="showPopup()"> <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
                  </div>
+            </div>
+            <div class="overlay" onclick="hidePopup()"></div>
+            <div class="popup" id="warningPopup">
+                <h2>Warning!</h2>
+                <p>Would you like to log out</p>
+                <button onclick="hidePopup()">No</button>
+                <button><a href="../Html/login.html">Yes</a></button>
             </div>
             <div class="table-div">
                 <div class="apply-button">
@@ -192,6 +199,7 @@
         </form>
     </div>
     <script src="/JS/applyleave.js"></script>
+    <script src="../JS/leaves.js"></script>
     <!-- POP UP -->
 
 </body>
