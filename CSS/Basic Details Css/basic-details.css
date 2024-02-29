@@ -15,6 +15,20 @@ body {
     color: #fff;
     border-radius: 20px;
 }
+.toggle-on {
+    position: relative;
+    left: 7%;
+    height: 100%;
+    color: #fff;
+}
+
+.toggle-on button {
+    border: none;
+    color: #E17576;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
 .popup {
     display: none;
     position: fixed;
@@ -91,6 +105,7 @@ body {
 .basic-details-text p{
   margin: 0px;
 }
+
 /*  basic details text end  */
 
 /*  basic details list start  */
