@@ -7,10 +7,10 @@ body{
   }
   .logout button{
     border: none;
-      background-color: #E17576;
-      padding: 10px;
-      color: #fff;
-      border-radius: 20px;
+    background-color: #E17576;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
   }
   .popup {
     display: none;

@@ -77,6 +77,13 @@
                     <button onclick="showPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
                 </div>
             </div>
+            <div class="overlay" onclick="hidePopup()"></div>
+            <div class="popup" id="warningPopup">
+                <h2>Warning!</h2>
+                <p>Would you like to log out</p>
+                <button onclick="hidePopup()">No</button>
+                <button onclick="redirectToLogin()">Yes</button>
+            </div>
             <!-- basic details text end -->
             <!-- basic details list start -->
             <div class="basic-details-list">
@@ -157,3 +164,49 @@
 </body>
 
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activate Page</title>
+    <style>
+        /* CSS for active and inactive links */
+        .active {
+            color: blue;
+            /* Change color to indicate active */
+            font-weight: bold;
+            /* Add bold font to indicate active */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation links -->
+    <a href="#" id="link1" onclick="activatePage('link1')">Page 1</a>
+    <a href="#" id="link2" onclick="activatePage('link2')">Page 2</a>
+    <a href="#" id="link3" onclick="activatePage('link3')">Page 3</a>
+
+    <script>
+        // Function to activate page
+        function activatePage(linkId) {
+            // Remove 'active' class from all links
+            var links = document.querySelectorAll('a');
+            links.forEach(function (link) {
+                link.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked link
+            var clickedLink = document.getElementById(linkId);
+            clickedLink.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
+
