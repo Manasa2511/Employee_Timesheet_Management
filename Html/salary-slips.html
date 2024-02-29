@@ -71,8 +71,15 @@
                     <a href="#">Salary Slip</a>
                 </div>
                 <div class="logout">
-                    <button> <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    <button onclick="showPopup()"> <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
                  </div>
+            </div>
+            <div class="overlay" onclick="hidePopup()"></div>
+            <div class="popup" id="warningPopup">
+                <h2>Warning!</h2>
+                <p>Would you like to log out</p>
+                <button onclick="hidePopup()">No</button>
+                <button onclick=""><a href="../Html/login.html">Yes</a></button>
             </div>
             <div class="salary-slip-main-div">
                 <table>
@@ -134,20 +141,7 @@
         </div>
     </div>
 
-    <script>
-        function calculateTotal() {
-            var basicSalary = parseFloat(document.getElementById('basicSalary').value);
-            var bonus = parseFloat(document.getElementById('bonus').value);
-            var taxes = parseFloat(document.getElementById('taxes').value);
-            var insurance = parseFloat(document.getElementById('insurance').value);
-
-            var totalEarnings = basicSalary + bonus;
-            var totalDeductions = taxes + insurance;
-            var netSalary = totalEarnings - totalDeductions;
-
-            document.getElementById('totalSalary').innerText = netSalary.toFixed(2);
-        }
-    </script>
+    <script src="../JS/salary-slip.js"></script>
 </body>
 
 </html>
