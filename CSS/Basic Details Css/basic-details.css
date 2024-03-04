@@ -17,18 +17,103 @@ body {
 }
 .toggle-on {
     position: relative;
-    left: 7%;
+    left: 72%;
     height: 100%;
-    color: #fff;
 }
-
-.toggle-on button {
-    border: none;
+.toggle-on i{
     color: #E17576;
-    padding: 10px;
-    color: #fff;
-    border-radius: 20px;
+    padding: 2px 0px 0px 0px;
+    font-size: 33px;
 }
+ /* CSS styling for the popup */
+ /* .logout-popup {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: #fff;
+     padding: 15px 82px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     z-index: 9999;
+     display: none;
+     font-family: "Kanit", sans-serif;
+ }
+
+ .logout-overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 9998;
+     display: none;
+ }
+ .logout-button{
+    display: flex;
+ } */
+ .logout-overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     /* semi-transparent black */
+     z-index: 999;
+     /* make sure it's above other content */
+ }
+
+ .logout-popup {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: #fff;
+     padding: 20px 42px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+     font-family: "Kanit", sans-serif;
+     z-index: 1000;
+     /* make sure it's above overlay */
+ }
+
+ .logout-popup h2 {
+     margin: 0;
+ }
+
+ .logout-options select {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 10px;
+ }
+
+ .logout-button {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .logout-button button {
+     padding: 8px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .logout-button-yes button {
+     background-color: #ff3333;
+     color: #fff;
+ }
+
+ .logout-button-no button {
+     background-color: #666;
+     color: #fff;
+ }
+
+ .logout-button button:hover {
+     opacity: 0.8;
+ }
 .popup {
     display: none;
     position: fixed;
