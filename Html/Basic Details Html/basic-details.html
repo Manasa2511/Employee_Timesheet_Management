@@ -74,13 +74,18 @@
                     <div class="basic-details-text">
                         <p>Basic Details</p>
                     </div>
+                    <!-- warning popup button/icon -->
                     <div class="logout">
                         <button onclick="showPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
                     </div>
+                    <!-- warning popup button/icon -->
+                    <!-- toggle button/icon -->
                     <div class="toggle-on">
                         <i class="fa-solid fa-toggle-on" onclick="showLogoutConfirmation()"></i>
                     </div>
+                    <!-- toggle button/icon -->
                 </div>
+                <!-- warning popup -->
                 <div class="overlay" onclick="hidePopup()"></div>
                 <div class="popup" id="warningPopup">
                     <h2>Warning!</h2>
@@ -88,13 +93,15 @@
                     <button onclick="hidePopup()">No</button>
                     <button onclick="redirectToLogin()">Yes</button>
                 </div>
+                <!-- warning popup -->
+                <!-- logout popup -->
                 <div class="logout-overlay" onclick="hideLogoutConfirmation()"></div>
                 <div class="logout-popup" id="logoutConfirmation">
-                    <h2>LOGOUT</h2>
+                    <h6>LOGOUT</h6>
                     <hr>
                     <p>Type :</p>
                     <div class="logout-options">
-                        <select name="logout-type" id="">
+                        <select name="logout-type">
                             <option value="Options">Options...</option>
                             <option value="lunch-break">Lunch Break</option>
                             <option value="tea-break">Tea Break</option>
@@ -104,13 +111,14 @@
                     </div>
                     <div class="logout-button">
                         <div class="logout-button-yes">
-                            <button onclick="logout()">Yes</button>
+                            <button onclick="showPopup()">Yes</button>
                         </div>
                         <div class="logout-button-no">
                             <button onclick="hideLogoutConfirmation()">No</button>
                         </div>
                     </div>
                 </div>
+                <!-- logout popup -->
                 <!-- basic details text end -->
                 <!-- basic details list start -->
                 <div class="basic-details-list">
@@ -146,7 +154,7 @@
                             </div>
                         </div>
                         <div class="edit-profile">
-                            <button type="button" >Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                            <button onclick="openEditPopup()">Edit <i class="fa-solid fa-pen-to-square"></i></button>
                         </div>
                     </div>
                     <div class="user-details-brief">
@@ -328,7 +336,113 @@
                 <!-- basic details brief end -->
             </div>
         </div>
-    
+        <!-- Edit popup -->
+        <div id="editPopup" class="edit-overlay">
+            <div class="edit-content-main">
+                <div class="edit-content">
+                    <div class="edit-popup-1">
+                        <div class="user-first-name">
+                            <h6>First Name</h6>
+                            <input type="text" placeholder="First Name">
+                        </div>
+                        <div class="user-contact-number">
+                            <h6>Contact Number</h6>
+                            <input type="tel" placeholder="Contact Number">
+                        </div>
+                        <div class="user-blood-group">
+                            <h6>Blood Group</h6>
+                            <input type="text" placeholder="Blood Group">
+                        </div>
+                        <div class="user-emergency-contact-name">
+                            <h6>Emergency Contact Name</h6>
+                            <input type="text" placeholder="Emergency Contact Name">
+                        </div>
+                        <div class="user-ofc-mail">
+                            <h6>Office Email</h6>
+                            <input type="email" placeholder="Office Email">
+                        </div>
+                        <div class="user-checkin-time">
+                            <h6>Check-In Time</h6>
+                            <input type="time" placeholder="Check-In Time">
+                        </div>
+                        <div class="user-designation">
+                            <h6>Designation</h6>
+                            <input type="text" placeholder="Designation">
+                        </div>
+                    </div>
+                    <div class="edit-popup-2">
+                        <div class="user-last-name">
+                            <h6>Last Name</h6>
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="user-pan-number">
+                            <h6>Pan Number</h6>
+                            <input type="text" placeholder="Pan Number">
+                        </div>
+                        <div >
+                            <h6>Gender</h6>
+                            <div class="user-gender">
+                                <label for="male">Male</label>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="female">Female</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                            </div>
+                        </div>
+                        <div class="user-relation-with-employe">
+                            <h6>Relation With Employee</h6>
+                            <input type="text" placeholder="Relation With Employee">
+                        </div>
+                        <div class="user-joining-date">
+                            <h6>Date Of Joining</h6>
+                            <input type="date" placeholder="Date Of Joining">
+                        </div>
+                        <div class="user-checkout-time">
+                            <h6>Check-Out Time</h6>
+                            <input type="time" placeholder="Check-Out Time">
+                        </div>
+                        <div class="user-probation">
+                            <h6>Probation Period</h6>
+                            <input type="text" placeholder="Probation Period">
+                        </div>
+                    </div>
+                    <div class="edit-popup-3">
+                        <div class="user-personal-mail">
+                            <h6>Personal Email</h6>
+                            <input type="email" placeholder="Personal Email">
+                        </div>
+                        <div class="user-aadhar-number">
+                            <h6>Aadhar Number</h6>
+                            <input type="number" placeholder="Aadhar Number">
+                        </div>
+                        <div class="user-birth-date">
+                            <h6>Date of Birth</h6>
+                            <input type="date" placeholder="Date of Birth">
+                        </div>
+                        <div class="user-emergency-contact-no">
+                            <h6>Emergency Contact Number</h6>
+                            <input type="tel" placeholder="Emergency Contact Number">
+                        </div>
+                        <div class="user-reporting-manager">
+                            <h6>Reporting Manager</h6>
+                            <input type="text" placeholder="Reporting Manager">
+                        </div>
+                        <div class="user-department">
+                            <h6>Department</h6>
+                            <input type="text" placeholder="Department">
+                        </div>
+                        <div class="user-notice-period">
+                            <h6>Notice Period</h6>
+                            <input type="text" placeholder="Notice Period">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-close-btns">
+                    <button type="submit" class="btn upload" onclick="uploadFile()">Upload <i class="fa-solid fa-upload"></i></button>
+                    <button type="button" class="btn cancel" id="closeBtn" onclick="closePopup()">Close <i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </div>
+        
         <script src="/JS/Basic-details-js/basic-detail.js"></script>
 </body>
 

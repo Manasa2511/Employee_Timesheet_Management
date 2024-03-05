@@ -5,13 +5,13 @@ body {
 .logout{
     position: relative;
     left: 79%;
-    height: 100%;
+    margin-top: 2px;
     color: #fff;
 }
 .logout button{
     border: none;
     background-color: #E17576;
-    padding: 10px;
+    padding: 8px;
     color: #fff;
     border-radius: 20px;
 }
@@ -21,98 +21,78 @@ body {
     height: 100%;
 }
 .toggle-on i{
-    color: #E17576;
+    color: #79ee81;
     padding: 2px 0px 0px 0px;
     font-size: 33px;
 }
- /* CSS styling for the popup */
- /* .logout-popup {
-     position: fixed;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     background-color: #fff;
-     padding: 15px 82px;
-     border-radius: 10px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-     z-index: 9999;
-     display: none;
-     font-family: "Kanit", sans-serif;
- }
-
  .logout-overlay {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(0, 0, 0, 0.5);
-     z-index: 9998;
-     display: none;
- }
- .logout-button{
-    display: flex;
- } */
- .logout-overlay {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(0, 0, 0, 0.5);
-     /* semi-transparent black */
-     z-index: 999;
-     /* make sure it's above other content */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black */
+    z-index: 999;
+    /* make sure it's above other content */
  }
 
  .logout-popup {
-     position: fixed;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     background-color: #fff;
-     padding: 20px 42px;
-     border-radius: 10px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-     font-family: "Kanit", sans-serif;
-     z-index: 1000;
-     /* make sure it's above overlay */
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: "Kanit", sans-serif;
+    z-index: 1000;
+    /* make sure it's above overlay */
  }
 
- .logout-popup h2 {
-     margin: 0;
+ .logout-popup h6 {
+    margin: 0;
+    color: rgb(84, 132, 235);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 20px 0px;
  }
-
+ .logout-popup p{
+    padding: 0px 20px 0px;
+    margin: 0;
+ }
  .logout-options select {
-     width: 100%;
-     padding: 8px;
-     margin-bottom: 10px;
+    width: 85%;
+    padding: 6px;
+    border: 1px solid rgb(84, 132, 235);
+    border-radius: 4px;
+    margin: 10px 20px;
  }
 
  .logout-button {
-     display: flex;
-     justify-content: space-between;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 5px 7px;
  }
 
  .logout-button button {
-     padding: 8px 20px;
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(71, 118, 220);
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 5px;
  }
-
- .logout-button-yes button {
-     background-color: #ff3333;
-     color: #fff;
- }
-
- .logout-button-no button {
-     background-color: #666;
-     color: #fff;
- }
-
+.logout-button-no button{
+    color: #E17576;
+}
  .logout-button button:hover {
-     opacity: 0.8;
+    opacity: 0.8;
  }
 .popup {
     display: none;
@@ -294,289 +274,110 @@ body {
     grid-gap: 10px;
     margin: 15px 0px 0px;
 }
-.user-first-name-1 h6{
-  font-family: sans-serif;
-  font-size: 12px;
-  padding: 4px 0px;
-  margin: 0px;
-}
-.user-first-name-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
-    margin: 0px;
-}
-.user-contact-number-1 h6{
-  font-family: sans-serif;
-  font-size: 12px;
-  padding: 4px 0px;
-  margin: 0px;
-}
-.user-contact-number-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
-    margin: 0px;
-}
-.user-blood-group-1 h6{
-  font-family: sans-serif;
-  font-size: 12px;
-  padding: 4px 0px;
-  margin: 0px;
-}
-.user-blood-group-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
-    margin: 0px;
-}
-.user-emergency-contact-name-1 h6{
-  font-family: sans-serif;
-  font-size: 12px;
-  padding: 4px 0px;
-  margin: 0px;
-}
-.user-emergency-contact-name-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
-    margin: 0px;
-}
-.user-ofc-mail-1 h6{
-  font-family: sans-serif;
-  font-size: 12px;
-  padding: 4px 0px;
-  margin: 0px;
-}
-.user-ofc-mail-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
-    margin: 0px;
-}
-.user-checkin-time-1 h6{
-  font-family: sans-serif;
-  font-size: 12px;
-  padding: 4px 0px;
-  margin: 0px;
-}
-.user-checkin-time-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-designation-1 h6{
-  font-family: sans-serif;
-  font-size: 12px;
-  padding: 4px 0px;
-  margin: 0px;
-}
-.user-designation-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    padding: 4px 0px;
-    margin: 0px;
-}
-/* grid column 1 end */
-/* grid column 2 starts */
-.user-last-name-1 h6{
-font-family: sans-serif;
-font-size: 12px;
-margin: 0px;
-padding: 4px 0px;
-}
-.user-last-name-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-pan-number-1 h6{
+.employee-details h6{
     font-family: sans-serif;
     font-size: 12px;
     margin: 0px;
     padding: 4px 0px;
 }
-.user-pan-number-2 p{
+.employee-details p {
     font-family: sans-serif;
     font-size: 13px;
     color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-gender-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-gender-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-relation-with-employe-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-relation-with-employe-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-joining-date-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-joining-date-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-checkout-time-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-checkout-time-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-probation-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-probation-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-/* grid column 2 end */
-/* grid column 3 starts */
-.user-personal-mail-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
     padding: 4px 0px;
     margin: 0px;
-}
-
-.user-personal-mail-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-aadhar-number-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-
-.user-aadhar-number-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-birth-date-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-
-.user-birth-date-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-emergency-contact-no-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-
-.user-emergency-contact-no-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-reporting-manager-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-
-.user-reporting-manager-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-department-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-
-.user-department-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
-}
-.user-notice-period-1 h6{
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 0px;
-    padding: 4px 0px;
-}
-
-.user-notice-period-2 p{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #B1B2B8;
-    margin: 0px;
-    padding: 4px 0px;
 }
 /* grid column 3 end */
 /* basic details brief end */
+/* edit popup css */
+.edit-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.edit-content-main{
+    width: 68%;
+    height: 68%;
+    position: absolute;
+    top: 48%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.edit-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+.edit-content h6{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0px 5px; 
+    padding: 4px 0px;
+}
+.edit-content input{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #B1B2B8;
+    border: none;
+    width: 96%;
+    border-bottom: 1px dotted rgb(71, 118, 220);
+    margin: 5px;
+}
+.user-gender{
+    display: flex;
+}
+.gender h6 {
+    font-family: sans-serif;
+        font-size: 12px;
+        margin: 0px 5px;
+        padding: 4px 0px;
+}
+.user-gender label{
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 96%;
+    margin: 13px 5px 0px
+}
+.user-gender input{
+    margin: 13px 10px 2px 0px;
+}
+.submit-close-btns {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+/* Close button */
+.submit-close-btns .cancel {
+    color: red;
+}
+.submit-close-btns .upload {
+    color: rgb(71, 118, 220);
+}
+.submit-close-btns .btn {
+    padding: 10px 0px;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 5px;
+}
+
+.edit-content .btn:hover,
+.submit-close-btns:hover {
+    opacity: 1;
+}
+ /* Popup styles */
