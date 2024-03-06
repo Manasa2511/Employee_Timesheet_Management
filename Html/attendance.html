@@ -76,17 +76,53 @@
                         <p>Attendance</p>
                     </div>
                 </div>
-                <div class="logout">
-                   <button onclick="showPopup()"> <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                <div class="buttons-div">
+                    <!-- warning popup button/icon -->
+                    <div class="logout">
+                        <button onclick="showPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    </div>
+                    <!-- warning popup button/icon -->
+                    <!-- toggle button/icon -->
+                    <div class="toggle-on">
+                        <i class="fa-solid fa-toggle-on" onclick="showLogoutConfirmation()"></i>
+                    </div>
+                   <!-- toggle button/icon -->
                 </div>
             </div>
+            <!-- warning popup -->
             <div class="overlay" onclick="hidePopup()"></div>
             <div class="popup" id="warningPopup">
                 <h2>Warning!</h2>
                 <p>Would you like to log out</p>
                 <button onclick="hidePopup()">No</button>
-                <button onclick=""><a href="../Html/login.html">Yes</a></button>
+                <button onclick="redirectToLogin()">Yes</button>
             </div>
+            <!-- warning popup -->
+            <!-- logout popup -->
+            <div class="logout-overlay" onclick="hideLogoutConfirmation()"></div>
+            <div class="logout-popup" id="logoutConfirmation">
+                <h6>LOGOUT</h6>
+                <hr>
+                <p>Type :</p>
+                <div class="logout-options">
+                    <select name="logout-type">
+                        <option value="Options">Options...</option>
+                        <option value="lunch-break">Lunch Break</option>
+                        <option value="tea-break">Tea Break</option>
+                        <option value="other">Other Break</option>
+                        <option value="other">Session Logout</option>
+                    </select>
+                </div>
+                <div class="logout-button">
+                    <div class="logout-button-yes">
+                        <button onclick="showPopup()">Yes</button>
+                    </div>
+                    <div class="logout-button-no">
+                        <button onclick="hideLogoutConfirmation()">No</button>
+                    </div>
+                </div>
+            </div>
+            <!-- logout popup -->
             
            <div class="table-div">
             <table class="main-table">

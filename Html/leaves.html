@@ -72,9 +72,18 @@
                     <i class="fa-solid fa-person-walking-luggage"></i>
                     <a href="#">Leaves</a>
                 </div>
-                <div class="logout">
-                    <button onclick="showPopup()"> <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
-                 </div>
+                <div class="buttons-div">
+                    <!-- warning popup button/icon -->
+                    <div class="logout">
+                        <button onclick="showPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    </div>
+                    <!-- warning popup button/icon -->
+                    <!-- toggle button/icon -->
+                    <div class="toggle-on">
+                        <i class="fa-solid fa-toggle-on" onclick="showLogoutConfirmation()"></i>
+                    </div>
+                    <!-- toggle button/icon -->
+                </div>
             </div>
             <div class="overlay" onclick="hidePopup()"></div>
             <div class="popup" id="warningPopup">
