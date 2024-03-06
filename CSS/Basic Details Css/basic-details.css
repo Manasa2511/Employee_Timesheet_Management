@@ -2,9 +2,17 @@ body {
     margin: 0;
     top: 0;
 }
-.logout{
+.buttons-div {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0px 0px 0px 20px;
+    padding: 2px 3px 3px 33px;
+    height: 34px;
+}
+
+.logout {
     position: relative;
-    left: 79%;
+    left: 39%;
     margin-top: 2px;
     color: #fff;
 }
@@ -17,7 +25,7 @@ body {
 }
 .toggle-on {
     position: relative;
-    left: 72%;
+    right: 76%;
     height: 100%;
 }
 .toggle-on i{
@@ -148,8 +156,12 @@ body {
 }
 
 /*  basic details text start  */
+.basic-details-header{
+    display: flex;
+}
 .basic-details-page {
     display: flex;
+    justify-content: space-between;
 }
 .basic-details-main{
     margin:15px 25px;
@@ -294,6 +306,13 @@ body {
 /* grid column 3 end */
 /* basic details brief end */
 /* edit popup css */
+.edit-popup-header{
+    display: flex;
+    justify-content: space-between;
+}
+.user-profile{
+    display: flex;
+}
 .edit-overlay {
     display: none;
     position: fixed;
@@ -305,8 +324,8 @@ body {
     z-index: 999;
 }
 .edit-content-main{
-    width: 79%;
-    height: 84%;
+    width: 76%;
+    height: 81%;
     position: absolute;
     top: 49%;
     left: 52%;
@@ -364,7 +383,7 @@ body {
     color: red;
 }
 .submit-close-btns .upload {
-    color: rgb(71, 118, 220);
+    color: rgb(230, 178, 23);
 }
 .submit-close-btns .btn {
     padding: 10px 0px;
@@ -380,8 +399,14 @@ body {
     margin: 0 5px;
 }
 
-.edit-content .btn:hover,
-.submit-close-btns:hover {
-    opacity: 1;
+.upload:hover {
+    background-color: rgb(230, 178, 23);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
- /* Popup styles */
+.cancel:hover{
+    background-color: hsl(351, 80%, 53%);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Popup styles */

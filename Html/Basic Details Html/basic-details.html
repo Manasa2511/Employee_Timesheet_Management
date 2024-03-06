@@ -68,22 +68,26 @@
             <div class="basic-details-main">
                 <!-- basic details text start -->
                 <div class="basic-details-page">
-                    <div class="basic-details-user">
-                        <i class="fa-solid fa-users"></i>
+                    <div class="basic-details-header">
+                        <div class="basic-details-user">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="basic-details-text">
+                            <p>Basic Details</p>
+                        </div>
                     </div>
-                    <div class="basic-details-text">
-                        <p>Basic Details</p>
+                    <div class="buttons-div">
+                        <!-- warning popup button/icon -->
+                        <div class="logout">
+                            <button onclick="showPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                        </div>
+                        <!-- warning popup button/icon -->
+                        <!-- toggle button/icon -->
+                        <div class="toggle-on">
+                            <i class="fa-solid fa-toggle-on" onclick="showLogoutConfirmation()"></i>
+                        </div>
+                        <!-- toggle button/icon -->
                     </div>
-                    <!-- warning popup button/icon -->
-                    <div class="logout">
-                        <button onclick="showPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
-                    </div>
-                    <!-- warning popup button/icon -->
-                    <!-- toggle button/icon -->
-                    <div class="toggle-on">
-                        <i class="fa-solid fa-toggle-on" onclick="showLogoutConfirmation()"></i>
-                    </div>
-                    <!-- toggle button/icon -->
                 </div>
                 <!-- warning popup -->
                 <div class="overlay" onclick="hidePopup()"></div>
@@ -339,23 +343,37 @@
         <!-- Edit popup -->
         <div id="editPopup" class="edit-overlay">
             <div class="edit-content-main">
-                <div class="user-profile">
-                    <div class="user-profile-img">
-                        <img src="/img/profile.jpg" alt="">
+                <div class="edit-popup-header">
+                    <div class="user-profile">
+                        <div class="user-profile-img">
+                            <img src="/img/profile.jpg" alt="">
+                        </div>
+                        <div class="user-profile-text">
+                            <div class="employee-name">
+                                <h6>Alexdar noel</h6>
+                            </div>
+                            <div class="employee-id">
+                                <p>EMP ID:-E0008</p>
+                            </div>
+                            <div class="employee-mail">
+                                <p>alexdar@gmail.com</p>
+                            </div>
+                            <div class="employee-contact">
+                                <p>1234567890</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="user-profile-text">
-                        <div class="employee-name">
-                            <h6>Alexdar noel</h6>
+                    <div class="buttons-div">
+                        <!-- warning popup button/icon -->
+                        <div class="logout">
+                            <button onclick="showPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
                         </div>
-                        <div class="employee-id">
-                            <p>EMP ID:-E0008</p>
+                        <!-- warning popup button/icon -->
+                        <!-- toggle button/icon -->
+                        <div class="toggle-on">
+                            <i class="fa-solid fa-toggle-on" onclick="showLogoutConfirmation()"></i>
                         </div>
-                        <div class="employee-mail">
-                            <p>alexdar@gmail.com</p>
-                        </div>
-                        <div class="employee-contact">
-                            <p>1234567890</p>
-                        </div>
+                        <!-- toggle button/icon -->
                     </div>
                 </div>
                 <div class="edit-content">
@@ -457,7 +475,7 @@
                 </div>
                 <div class="submit-close-btns">
                     <button type="submit" class="btn upload" onclick="uploadFile()">Upload <i class="fa-solid fa-upload"></i></button>
-                    <button type="button" class="btn cancel" id="closeBtn" onclick="closePopup()">Close <i class="fa-solid fa-xmark"></i></button>
+                    <button type="button" class="btn cancel" id="closeBtn" onclick="closePopup()">Cancel <i class="fa-solid fa-trash"></i></button>
                 </div>
             </div>
         </div>
