@@ -305,11 +305,11 @@ body {
     z-index: 999;
 }
 .edit-content-main{
-    width: 68%;
-    height: 68%;
+    width: 79%;
+    height: 84%;
     position: absolute;
-    top: 48%;
-    left: 54%;
+    top: 49%;
+    left: 52%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 30px 20px 20px;
