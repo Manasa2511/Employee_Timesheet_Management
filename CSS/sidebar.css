@@ -96,7 +96,10 @@ body{
     background-color: #f0f0f0; 
     color:#596ec0 ;
 }
-
+ .active-desgin{
+  background-color: #f0f0f0; 
+    color:#596ec0 !important ;
+ }
 
 .content {
     margin-left: 250px;
