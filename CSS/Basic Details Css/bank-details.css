@@ -114,7 +114,11 @@ body {
     margin: 0px 4px 4px;
     border-radius: 6px;
 }
-
+.basic-details-list .bank-details-href{
+    background-color: #332bdd;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .basic-details-list a:hover {
     background-color: #332bdd;
     color: white;
