@@ -6,9 +6,16 @@ body {
 .education-main {
     display: flex;
 }
+.buttons-div {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0px 0px 0px 20px;
+    padding: 2px 3px 3px 33px;
+}
+
 .logout {
     position: relative;
-    left: 79%;
+    left: 39%;
     margin-top: 2px;
     color: #fff;
 }
@@ -23,7 +30,7 @@ body {
 
 .toggle-on {
     position: relative;
-    left: 72%;
+    right: 76%;
     height: 100%;
 }
 
@@ -156,8 +163,12 @@ body {
     display: none;
   }
 /*  basic details text start  */
+.basic-details-header {
+    display: flex;
+}
 .basic-details-page {
     display: flex;
+    justify-content: space-between;
 }
 
 .basic-details-main {
@@ -418,4 +429,15 @@ td {
     display: flex;
     justify-content: end;
     padding-top: 10px;
+}
+.btn:hover {
+    background-color: #443bdf;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cancel:hover {
+    background-color: hsl(351, 80%, 53%);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
