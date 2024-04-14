@@ -19,7 +19,7 @@
   function showLogoutConfirmation() {
       document.querySelector('.logout-overlay').style.display = 'block';
       document.getElementById('logoutConfirmation').style.display = 'block';
-  }
+  } 
 
   // Function to hide logout confirmation popup
   function hideLogoutConfirmation() {
