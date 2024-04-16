@@ -1,10 +1,14 @@
+<?php
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/sidebar.css">
+    <link rel="stylesheet" href="../CSS/sidebar.css">
     <!-- sidebar profile name font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -15,7 +19,7 @@
         integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font awesome 6.5.0 cdn -->
-    <link rel="stylesheet" href="/CSS/Basic Details Css/basic-details.css">
+    <link rel="stylesheet" href="../CSS/Basic_details_css/basic-details.css">
     <title>Basic Details</title>
 </head>
 
@@ -40,7 +44,7 @@
                     <div class="sidebar-menus">
                         <div class="dashboard flex-center grey-bg-hover">
                             <i class="fa-sharp fa-solid fa-table-columns"></i>
-                            <a href="../dashboard.html">Dashboard</a>
+                            <a href="../Php/dashboard.php">Dashboard</a>
                         </div>
                         <div class="attendance flex-center grey-bg-hover">
                             <i class="fa-regular fa-calendar"></i>
@@ -52,7 +56,7 @@
                         </div>
                         <div class="basic-details flex-center grey-bg-hover">
                             <i class="fa-regular fa-address-card active-desgin"></i>
-                            <a class="active-desgin" href="#">Basic Details</a>
+                            <a class="active-desgin" href="../basic-details.php">Basic Details</a>
                         </div>
                         <div class="holidays flex-center grey-bg-hover">
                             <i class="fa-regular fa-calendar-xmark"></i>
@@ -126,13 +130,13 @@
                 <!-- basic details text end -->
                 <!-- basic details list start -->
                 <div class="basic-details-list">
-                    <a class="basic-details-href" href="../Basic Details Html/basic-details.html">Basic Details</a>
-                    <a href="../Basic Details Html/documents.html">Documents</a>
-                    <a href="../Basic Details Html/address.html">Address</a>
-                    <a href="../Basic Details Html/education.html">Education</a>
-                    <a href="../Basic Details Html/experiance.html">Experiance</a>
-                    <a href="../Basic Details Html/bank-details.html">Bank Details</a>
-                    <a href="../Basic Details Html/family-details.html">Family Details</a>
+                    <a class="basic-details-href" href="../Basic_details_html/basic-details.html">Basic Details</a>
+                    <a href="../Basic_details_html/documents.html">Documents</a>
+                    <a href="../Basic_details_html/address.html">Address</a>
+                    <a href="../Basic_details_html/education.html">Education</a>
+                    <a href="../Basic_details_html/experiance.html">Experiance</a>
+                    <a href="../Basic_details_html/bank-details.html">Bank Details</a>
+                    <a href="../Basic_details_html/family-details.html">Family Details</a>
                 </div>
                 <!-- basic details list end -->
                 <!-- basic details brief start -->
