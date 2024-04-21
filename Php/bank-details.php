@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/sidebar.css">
-    <link rel="stylesheet" href="/CSS/Basic Details Css/education.css">
+    <link rel="stylesheet" href="../CSS/sidebar.css">
+    <link rel="stylesheet" href="../CSS/Basic_details_css/bank-details.css">
     <!-- sidebar profile name font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -16,11 +16,11 @@
         integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font awesome 6.5.0 cdn -->
-    <title>Education</title>
+    <title>Bank details</title>
 </head>
 
 <body>
-    <div class="education-main">
+    <div class="bank-details-main">
         <div class="sidebar">
             <div class="sidebar-ofcname">
                 <h3 class="sidebar-ofcname-head"> Techiebears</h3>
@@ -29,7 +29,7 @@
             <hr>
             <div class="sidebar-profile">
                 <div class="sidebar-profile-img ">
-                    <img src="/img/profile.jpg" alt="">
+                    <img src="../img/profile.jpg" alt="">
                 </div>
                 <div class="sidebar-profile-name">
                     <h6>Alexdar noel</h6>
@@ -39,27 +39,27 @@
                 <div class="sidebar-menus">
                     <div class="dashboard flex-center grey-bg-hover">
                         <i class="fa-sharp fa-solid fa-table-columns"></i>
-                        <a href="/Html/dashboard.html">Dashboard</a>
+                        <a href="../Php/dashboard.php">Dashboard</a>
                     </div>
                     <div class="attendance flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar"></i>
-                        <a href="/Html/attendance.html">Attendance</a>
+                        <a href="../Php/attendance.php">Attendance</a>
                     </div>
                     <div class="leaves flex-center grey-bg-hover">
                         <i class="fa-solid fa-person-walking-luggage"></i>
-                        <a href="/Html/leaves.html">Leaves</a>
+                        <a href="../Php/leaves.php">Leaves</a>
                     </div>
                     <div class="basic-details flex-center grey-bg-hover">
                         <i class="fa-regular fa-address-card"></i>
-                        <a href="../Basic Details Html/basic-details.html">Basic Details</a>
+                        <a href="../Php/basic-details.php">Basic Details</a>
                     </div>
                     <div class="holidays flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar-xmark"></i>
-                        <a href="/Html/holidays.html">Holidays</a>
+                        <a href="../Php/holidays.php">Holidays</a>
                     </div>
                     <div class="salary-slip flex-center grey-bg-hover">
                         <i class="fa-solid fa-toilet-paper"></i>
-                        <a href="/Html/salary-slips.html">Salary Slips</a>
+                        <a href="../Php/salary-slips.php">Salary Slips</a>
                     </div>
                 </div>
             </div>
@@ -125,99 +125,73 @@
             <!-- basic details text end -->
             <!-- basic details list start -->
             <div class="basic-details-list">
-                <a href="../Basic Details Html/basic-details.html">Basic Details</a>
-                <a href="../Basic Details Html/documents.html">Documents</a>
-                <a href="../Basic Details Html/address.html">Address</a>
-                <a class="education-href" href="../Basic Details Html/education.html">Education</a>
-                <a href="../Basic Details Html/experiance.html">Experiance</a>
-                <a href="../Basic Details Html/bank-details.html">Bank Details</a>
-                <a href="../Basic Details Html/family-details.html">Family Details</a>
+                <a href="../Php/basic-details.php">Basic Details</a>
+                <a href="../Php/documents.php">Documents</a>
+                <a href="../Php/address.php">Address</a>
+                <a href="../Php/education.php">Education</a>
+                <a href="../Php/experiance.php">Experiance</a>
+                <a class="bank-details-href" href="../Php/bank-details.php">Bank Details</a>
+                <a href="../Php/family-details.php">Family Details</a>
             </div>
             <!-- basic details list end -->
-            <!-- documents list -->
-            <div class="education-list-main">
-                <div class="education-list">
-                    <div class="education-list-para">
-                        <div class="education-list-icon">
-                            <i class="fa-solid fa-calendar"></i>
+            <!-- bank details list -->
+            <div class="bank-details-list-main">
+                <div class="bank-details-list">
+                    <div class="bank-details-list-para">
+                        <div class="bank-details-list-icon">
+                            <i class="fa-solid fa-building-columns"></i>
                         </div>
-                        <div class="education-list-text">
-                            <p>Educational Documents</p>
+                        <div class="bank-details-list-text">
+                            <p>Bank Details </p>
                         </div>
                     </div>
-                    <div class="add-education">
-                        <button type="button" id="openBtn">Add Documents <i class="fa-solid fa-file-invoice"></i></button>
-                    </div>
                 </div>
-                <div class="education-brief">
-                    <table class="education-brief-table">
-                        <tr class="education-brief-head">
-                            <th class="education-empid">Empid </th>
-                            <th class="education-name">education Name </th>
-                            <th class="education-type">education Type</th>
-                            <th class="education-uplode-date">Uplode Date </th>
-                            <th class="education-view-file">View File </th>
-                        </tr>
-                        <tr>
-                            <td class="emp-education-empid-1">E0008</td>
-                            <td class="emp-education-name-1">wrfg</td>
-                            <td class="emp-education-type-1">aadhar card</td>
-                            <td class="emp-education-uplode-date-1">13/02/2024</td>
-                            <td class="emp-education-view-file-1">View</td>
-                        </tr>
-                        <tr>
-                            <td class="emp-education-empid-2">E0008</td>
-                            <td class="emp-education-name-2">wrfg</td>
-                            <td class="emp-education-type-2">aadhar card</td>
-                            <td class="emp-education-uplode-date-2">13/02/2024</td>
-                            <td class="emp-education-view-file-2">View</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <!-- educations list -->
-        </div>
-    </div>
-    <!-- POP UP -->
-    
-    <div id="popupForm" class="form-popup">
-        <form action="/submit" class="form-container">
-            <h2 class="form-head fs-kanit">Add Documents</h2>
-            <hr>
-            <div class="form-body-part">
-                <div class="emp-id">
-                    <p>EmployeeID : </p>
-                </div>
-                <div class="input-leave-duration">
-                    <form action="#">
-                        <label for="">Document Type :</label>
-                        <select name="document-type" class="select-option">
-                            <option value="options">options..</option>
-                            <option value="10th-marksheet">10th_Marksheet</option>
-                            <option value="12th-marksheet">12th_Marksheet</option>
-                            <option value="graduation-certicate">Graduation_Certificate</option>
-                            <option value="masters">Masters</option>
-                        </select>
+                <div id="popupForm" class="form-popup">
+                    <form action="/submit" class="form-container">
+                        <div class="form-body-part">
+                            <div class="form-body-part-1">
+                                <div class="company-name">
+                                    <label for="">Bank Name</label>
+                                    <input type="text" name="" id="" placeholder="Bank Name">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Account Number </label>
+                                    <input type="text" name="" id="" placeholder="Account Number">
+                                </div>
+                            </div>
+                            <div class="form-body-part-2">
+                                <div class="emp-position">
+                                    <label for="">Account Type</label>
+                                    <input type="text" placeholder="Account Type">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Account Holder Name</label>
+                                    <input type="text" name="" id="" placeholder="Account Holder Name">
+                                </div>
+                            </div>
+                            <div class="form-body-part-3">
+                                <div class="emp-position">
+                                    <label for="">IFSC Code</label>
+                                    <input type="text" placeholder="IFSC Code">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Branch Name</label>
+                                    <input type="text" name="" id="" placeholder="Branch Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-close-btns">
+                            <button type="submit" class="btn">Upload <i class="fa-solid fa-upload"></i></button>
+                            <button type="button" class="btn cancel" id="closeBtn">Cancel <i class="fa-solid fa-trash"></i></button>
+                        </div>
                     </form>
                 </div>
-                <div class="document-information">
-                    <label for="">Document Information: </label>
-                    <input type="text" placeholder="Marksheet, Election Card">
-                </div>
-                <form action="#">
-                    <label for="fileInput">Document:</label>
-                    <input type="file" id="fileInput" name="fileInput" class="file-input">
-                </form>
             </div>
-            <div class="submit-close-btns">
-                <button type="submit" class="btn">Submit</button>
-                <button type="button" class="btn cancel" id="closeBtn">Close</button>
-            </div>
-        </form>
+            
+            <!-- bank details list -->
+        </div>
     </div>
-    <script src="/JS/applyleave.js"></script>
-    <script src="/JS/Basic-details-js/education.js"></script>
-    <!-- POP UP -->
+    <script src="../JS/Basic-details-js/bank-detail.js"></script>
 </body>
 
 </html>

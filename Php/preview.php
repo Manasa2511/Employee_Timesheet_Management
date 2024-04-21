@@ -64,7 +64,7 @@
                 <button type="button" onclick="printSalarySlip()">Print</button>
             </div>
             <div class="back-btn">
-                <button type="button"><a href="../Html/salary-slips.html">Back</a></button>
+                <button type="button"><a href="../Html/salary-slips.php">Back</a></button>
             </div>
         </div>
     </div>

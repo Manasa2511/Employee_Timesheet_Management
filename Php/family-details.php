@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/sidebar.css">
-    <link rel="stylesheet" href="/CSS/Basic Details Css/address.css">
+    <link rel="stylesheet" href="../CSS/sidebar.css">
+    <link rel="stylesheet" href="../CSS/Basic_details_css/family-details.css">
     <!-- sidebar profile name font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -16,11 +16,11 @@
         integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font awesome 6.5.0 cdn -->
-    <title>Address</title>
+    <title>Family details</title>
 </head>
 
 <body>
-    <div class="address-main">
+    <div class="family-details-main">
         <div class="sidebar">
             <div class="sidebar-ofcname">
                 <h3 class="sidebar-ofcname-head"> Techiebears</h3>
@@ -29,7 +29,7 @@
             <hr>
             <div class="sidebar-profile">
                 <div class="sidebar-profile-img ">
-                    <img src="/img/profile.jpg" alt="">
+                    <img src="../img/profile.jpg" alt="">
                 </div>
                 <div class="sidebar-profile-name">
                     <h6>Alexdar noel</h6>
@@ -39,27 +39,27 @@
                 <div class="sidebar-menus">
                     <div class="dashboard flex-center grey-bg-hover">
                         <i class="fa-sharp fa-solid fa-table-columns"></i>
-                        <a href="/Html/dashboard.html">Dashboard</a>
+                        <a href="../Php/dashboard.php">Dashboard</a>
                     </div>
                     <div class="attendance flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar"></i>
-                        <a href="/Html/attendance.html">Attendance</a>
+                        <a href="../Php/attendance.php">Attendance</a>
                     </div>
                     <div class="leaves flex-center grey-bg-hover">
                         <i class="fa-solid fa-person-walking-luggage"></i>
-                        <a href="/Html/leaves.html">Leaves</a>
+                        <a href="../Php/leaves.php">Leaves</a>
                     </div>
                     <div class="basic-details flex-center grey-bg-hover">
                         <i class="fa-regular fa-address-card"></i>
-                        <a href="../Basic Details Html/basic-details.html">Basic Details</a>
+                        <a href="../Php/basic-details.php">Basic Details</a>
                     </div>
                     <div class="holidays flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar-xmark"></i>
-                        <a href="/Html/holidays.html">Holidays</a>
+                        <a href="../Php/holidays.php">Holidays</a>
                     </div>
                     <div class="salary-slip flex-center grey-bg-hover">
                         <i class="fa-solid fa-toilet-paper"></i>
-                        <a href="/Html/salary-slips.html">Salary Slips</a>
+                        <a href="../Php/salary-slips.php">Salary Slips</a>
                     </div>
                 </div>
             </div>
@@ -125,103 +125,81 @@
             <!-- basic details text end -->
             <!-- basic details list start -->
             <div class="basic-details-list">
-                <a href="../Basic Details Html/basic-details.html">Basic Details</a>
-                <a href="../Basic Details Html/documents.html">Documents</a>
-                <a class="address-href" href="../Basic Details Html/address.html">Address</a>
-                <a href="../Basic Details Html/education.html">Education</a>
-                <a href="../Basic Details Html/experiance.html">Experiance</a>
-                <a href="../Basic Details Html/bank-details.html">Bank Details</a>
-                <a href="../Basic Details Html/family-details.html">Family Details</a>
+                <a href="../Php/basic-details.php">Basic Details</a>
+                <a href="../Php/documents.php">Documents</a>
+                <a href="../Php/address.php">Address</a>
+                <a href="../Php/education.php">Education</a>
+                <a href="../Php/experiance.php">Experiance</a>
+                <a href="../Php/bank-details.php">Bank Details</a>
+                <a class="family-detail.href" href="../Php/family-details.php">Family Details</a>
             </div>
             <!-- basic details list end -->
-            <!-- address details -->
-            <div class="address-details-main">
-                <div class="address-details">
-                    <div class="address-details-para">
-                        <div class="address-details-icon">
-                            <i class="fa-solid fa-house"></i>
+            <!-- family details list -->
+            <div class="family-details-list-main">
+                <div class="family-details-list">
+                    <div class="family-details-list-para">
+                        <div class="family-details-list-icon">
+                            <i class="fa-solid fa-people-roof"></i>
                         </div>
-                        <div class="address-details-text">
-                            <p>Address</p>
+                        <div class="family-details-list-text">
+                            <p>Family Details </p>
                         </div>
-                    </div>
-                    <div class="address-edit-button">
-                        <button type="button" id="openBtn">Edit <i class="fa-solid fa-user-pen"></i></button>
                     </div>
                 </div>
-                <div class="address-brief-main">
-                    <div class="input-address">
-                        <div class="input-address-text">
-                            <p>Address</p>
+                <div id="popupForm" class="form-popup">
+                    <form action="/submit" class="form-container">
+                        <div class="form-body-part">
+                            <div class="form-body-part-1">
+                                <div class="company-name">
+                                    <label for="">Father's Name</label>
+                                    <input type="text" name="" id="" placeholder="Father's Name">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Father's Occupation </label>
+                                    <input type="text" name="" id="" placeholder="null">
+                                </div>
+                            </div>
+                            <div class="form-body-part-2">
+                                <div class="emp-position">
+                                    <label for="">Father's Contact Number</label>
+                                    <input type="text" placeholder="null">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Mother's Name</label>
+                                    <input type="text" name="" id="" placeholder="Mother's Name">
+                                </div>
+                            </div>
+                            <div class="form-body-part-3">
+                                <div class="emp-position">
+                                    <label for="">Mother's Occupation</label>
+                                    <input type="text" placeholder="null">
+                                </div>
+                                <div class="input-leave-duration">
+                                    <label for="">Mother's Contact Number</label>
+                                    <input type="text" name="" id="" placeholder="null">
+                                </div>
+                            </div>
                         </div>
-                        <div class="input-address-para">
-                            <p>Ganeshnagar Kamatghar Bhiwandi Thane 421302</p>
+                        <div class="marriage-status">
+                            <label for="">Marriage Status: </label>
+                            <input type="radio" id="unmarried" name="marriage-status" value="unmarried">
+                            <label for="unmarried">Unmarried</label>
+                            <input type="radio" id="married" name="marriage-status" value="married">
+                            <label for="married">Married</label>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="address-brief">
-                        <table class="address-brief-table">
-                            <tr class="address-brief-head">
-                                <th class="address-city"> City </th>
-                                <th class="address-district">District </th>
-                                <th class="address-state">State</th>
-                                <th class="address-pin-code">Pin Code</th>
-                                <th class="address-country">Country</th>
-                            </tr>
-                            <tr>
-                                <td class="emp-address-city-1">Bhiwandi</td>
-                                <td class="emp-address-district-1">421302</td>
-                                <td class="emp-address-state-1">Maharashtra</td>
-                                <td class="emp-address-pin-code-1">421302</td>
-                                <td class="emp-address-country-1">India</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <!-- address details -->
-        </div>
-    </div>
-    <!-- POP UP -->
-    
-    <div id="popupForm" class="form-popup">
-        <form action="/submit" class="form-container">
-            <h2 class="form-head fs-kanit">Add Documents</h2>
-            <hr>
-            <div class="form-body-part">
-                <div class="emp-id">
-                    <p>EmployeeID : </p>
-                </div>
-                <div class="input-leave-duration">
-                    <form action="#">
-                        <label for="">Document Type :</label>
-                        <select name="document-type" class="select-option">
-                            <option value="options">options..</option>
-                            <option value="10th-marksheet">10th_Marksheet</option>
-                            <option value="12th-marksheet">12th_Marksheet</option>
-                            <option value="graduation-certicate">Graduation_Certificate</option>
-                            <option value="masters">Masters</option>
-                        </select>
+                        <div class="submit-close-btns">
+                            <button type="submit" class="btn">Upload <i class="fa-solid fa-upload"></i></button>
+                            <button type="button" class="btn cancel" id="closeBtn">Cancel <i class="fa-solid fa-trash"></i></button>
+                        </div>
                     </form>
                 </div>
-                <div class="document-information">
-                    <label for="">Document Information: </label>
-                    <input type="text" placeholder="Marksheet, Election Card">
-                </div>
-                <form action="#">
-                    <label for="fileInput">Document:</label>
-                    <input type="file" id="fileInput" name="fileInput" class="file-input">
-                </form>
             </div>
-            <div class="submit-close-btns">
-                <button type="submit" class="btn">Submit</button>
-                <button type="button" class="btn cancel" id="closeBtn">Close</button>
-            </div>
-        </form>
-    
+            
+            <!-- family details list -->
+        </div>
     </div>
-    <script src="/JS/applyleave.js"></script>
-    <script src="/JS/Basic-details-js/address.js"></script>
-    <!-- POP UP -->
+    <script src="../JS/Basic-details-js/family-detail.js"></script>
 </body>
+
 </html>
+

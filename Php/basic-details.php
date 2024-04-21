@@ -19,7 +19,7 @@
         integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font awesome 6.5.0 cdn -->
-    <link rel="stylesheet" href="../CSS/Basic_details_css/basic-details.css">
+    <link rel="stylesheet" href="../CSS/basic-details.css">
     <title>Basic Details</title>
 </head>
 
@@ -34,7 +34,7 @@
                 <hr>
                 <div class="sidebar-profile">
                     <div class="sidebar-profile-img ">
-                        <img src="/img/profile.jpg" alt="">
+                        <img src="../img/profile.jpg" alt="">
                     </div>
                     <div class="sidebar-profile-name">
                         <h6>Alexdar noel</h6>
@@ -48,11 +48,11 @@
                         </div>
                         <div class="attendance flex-center grey-bg-hover">
                             <i class="fa-regular fa-calendar"></i>
-                            <a href="../attendance.html">Attendance</a>
+                            <a href="../attendance.php">Attendance</a>
                         </div>
                         <div class="leaves flex-center grey-bg-hover">
                             <i class="fa-solid fa-person-walking-luggage"></i>
-                            <a href="../leaves.html">Leaves</a>
+                            <a href="../leaves.php">Leaves</a>
                         </div>
                         <div class="basic-details flex-center grey-bg-hover">
                             <i class="fa-regular fa-address-card active-desgin"></i>
@@ -60,11 +60,11 @@
                         </div>
                         <div class="holidays flex-center grey-bg-hover">
                             <i class="fa-regular fa-calendar-xmark"></i>
-                            <a href="../holidays.html">Holidays</a>
+                            <a href="../holidays.php">Holidays</a>
                         </div>
                         <div class="salary-slip flex-center grey-bg-hover">
                             <i class="fa-solid fa-toilet-paper"></i>
-                            <a href="../salary-slips.html">Salary Slips</a>
+                            <a href="../salary-slips.php">Salary Slips</a>
                         </div>
                     </div>
                 </div>
@@ -130,13 +130,13 @@
                 <!-- basic details text end -->
                 <!-- basic details list start -->
                 <div class="basic-details-list">
-                    <a class="basic-details-href" href="../Basic_details_html/basic-details.html">Basic Details</a>
-                    <a href="../Basic_details_html/documents.html">Documents</a>
-                    <a href="../Basic_details_html/address.html">Address</a>
-                    <a href="../Basic_details_html/education.html">Education</a>
-                    <a href="../Basic_details_html/experiance.html">Experiance</a>
-                    <a href="../Basic_details_html/bank-details.html">Bank Details</a>
-                    <a href="../Basic_details_html/family-details.html">Family Details</a>
+                    <a class="basic-details-href" href="../Php/basic-details.php">Basic Details</a>
+                    <a href="../Php/documents.php">Documents</a>
+                    <a href="../Php/address.php">Address</a>
+                    <a href="../Php/education.php">Education</a>
+                    <a href="../Php/experiance.php">Experiance</a>
+                    <a href="../Php/bank-details.php">Bank Details</a>
+                    <a href="../Php/family-details.php">Family Details</a>
                 </div>
                 <!-- basic details list end -->
                 <!-- basic details brief start -->
@@ -144,7 +144,7 @@
                     <div class="profile-details">
                         <div class="user-profile">
                             <div class="user-profile-img">
-                                <img src="/img/profile.jpg" alt="">
+                                <img src="../img/profile.jpg" alt="">
                             </div>
                             <div class="user-profile-text">
                                 <div class="employee-name">
@@ -350,7 +350,7 @@
                 <div class="edit-popup-header">
                     <div class="user-profile">
                         <div class="user-profile-img">
-                            <img src="/img/profile.jpg" alt="">
+                            <img src="../img/profile.jpg" alt="">
                         </div>
                         <div class="user-profile-text">
                             <div class="employee-name">
@@ -484,7 +484,7 @@
             </div>
         </div>
         
-        <script src="/JS/Basic-details-js/basic-detail.js"></script>
+        <script src="../JS/Basic-details-js/basic-detail.js"></script>
 </body>
 
 </html>

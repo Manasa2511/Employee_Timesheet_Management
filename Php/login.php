@@ -3,12 +3,12 @@ include('connect.php');
 // global $con;
 // Check if the form is submitted
 if(isset($_POST['login'])) {
-    $uname = $_POST['uname'];
-    $psw = $_POST['psw'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
 
     // Query to check if the username and password exist in the database
-    $sql = "SELECT * FROM employee_db WHERE username='$uname' AND password='$psw'";
+    $sql = "SELECT * FROM employee_db WHERE username='$username' AND password='$password'";
     $result = $con->query($sql);
     
     if ($result->num_rows > 0) {
@@ -49,20 +49,20 @@ if(isset($_POST['login'])) {
                     <div class="head">
                         <h1>Sign In</h1>
                     </div>
-                    <label for="uname"><b>Employee Name</b></label>
-                    <input type="text" placeholder="Employee Name"id="uname" name="uname" required>
+                    <label for="username"><b>Employee Name</b></label>
+                    <input type="text" placeholder="Employee Name"id="username" name="username" required>
 
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="password" name="password" required>
 
                     <button type="submit" name="login">Login</button>
-                    <label>
+                    <!-- <label>
                         <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
+                    </label> -->
                 </div>
                 <div class="container">
                     <button type="button" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    <!-- <span class="psw">New Employee <a href="./sign-up.php">sign-up?</a></span> -->
                 </div>
             </form>
         </div>

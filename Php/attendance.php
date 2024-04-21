@@ -40,27 +40,27 @@
                 <div class="sidebar-menus">
                     <div class="dashboard flex-center grey-bg-hover">
                         <i class="fa-sharp fa-solid fa-table-columns"></i>
-                        <a href="../Html/dashboard.html">Dashboard</a>
+                        <a href="../Html/dashboard.php">Dashboard</a>
                     </div>
                     <div class="attendance flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar active-desgin"></i>
-                        <a class="active-desgin" href="../Html/attendance.html">Attendance</a>
+                        <a class="active-desgin" href="../Html/attendance.php">Attendance</a>
                     </div>
                     <div class="leaves flex-center grey-bg-hover">
                         <i class="fa-solid fa-person-walking-luggage"></i>
-                        <a href="../Html/leaves.html">Leaves</a>
+                        <a href="../Html/leaves.php">Leaves</a>
                     </div>
                     <div class="basic-details flex-center grey-bg-hover">
                         <i class="fa-regular fa-address-card"></i>
-                        <a href="/Html/Basic Details Html/basic-details.html">Basic Details</a>
+                        <a href="/Html/Basic Details Html/basic-details.php">Basic Details</a>
                     </div>
                     <div class="holidays flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar-xmark"></i>
-                        <a href="../Html/holidays.html">Holidays</a>
+                        <a href="../Html/holidays.php">Holidays</a>
                     </div>
                     <div class="salary-slip flex-center grey-bg-hover">
                         <i class="fa-solid fa-toilet-paper"></i>
-                        <a href="../Html/salary-slips.html">Salary Slips</a>
+                        <a href="../Html/salary-slips.php">Salary Slips</a>
                     </div>
                    
                 </div>
