@@ -39,27 +39,27 @@
                 <div class="sidebar-menus">
                     <div class="dashboard flex-center grey-bg-hover">
                         <i class="fa-sharp fa-solid fa-table-columns"></i>
-                        <a href="../Html/dashboard.php">Dashboard</a>
+                        <a href="../Php/dashboard.php">Dashboard</a>
                     </div>
                     <div class="attendance flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar"></i>
-                        <a href="../Html/attendance.php">Attendance</a>
+                        <a href="../Php/attendance.php">Attendance</a>
                     </div>
                     <div class="leaves flex-center grey-bg-hover">
                         <i class="fa-solid fa-person-walking-luggage"></i>
-                        <a href="../Html/leaves.php">Leaves</a>
+                        <a href="../Php/leaves.php">Leaves</a>
                     </div>
                     <div class="basic-details flex-center grey-bg-hover">
                         <i class="fa-regular fa-address-card"></i>
-                        <a href="/Html/Basic Details Html/basic-details.php">Basic Details</a>
+                        <a href="../Php/basic-details.php">Basic Details</a>
                     </div>
                     <div class="holidays flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar-xmark"></i>
-                        <a href="../Html/holidays.php">Holidays</a>
+                        <a href="../Php/holidays.php">Holidays</a>
                     </div>
                     <div class="salary-slip flex-center grey-bg-hover">
                         <i class="fa-solid fa-toilet-paper active-desgin"></i>
-                        <a class="active-desgin" href="../Html/salary-slips.php">Salary Slips</a>
+                        <a class="active-desgin" href="../Php/salary-slips.php">Salary Slips</a>
                     </div>
                 </div>
             </div>

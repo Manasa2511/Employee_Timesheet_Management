@@ -19,7 +19,7 @@
         integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font awesome 6.5.0 cdn -->
-    <link rel="stylesheet" href="../CSS/basic-details.css">
+    <link rel="stylesheet" href="../CSS/Basic_details_css/basic-details.css">
     <title>Basic Details</title>
 </head>
 
@@ -48,23 +48,23 @@
                         </div>
                         <div class="attendance flex-center grey-bg-hover">
                             <i class="fa-regular fa-calendar"></i>
-                            <a href="../attendance.php">Attendance</a>
+                            <a href="../Php/attendance.php">Attendance</a>
                         </div>
                         <div class="leaves flex-center grey-bg-hover">
                             <i class="fa-solid fa-person-walking-luggage"></i>
-                            <a href="../leaves.php">Leaves</a>
+                            <a href="../Php/leaves.php">Leaves</a>
                         </div>
                         <div class="basic-details flex-center grey-bg-hover">
                             <i class="fa-regular fa-address-card active-desgin"></i>
-                            <a class="active-desgin" href="../basic-details.php">Basic Details</a>
+                            <a class="active-desgin" href="../Php/basic-details.php">Basic Details</a>
                         </div>
                         <div class="holidays flex-center grey-bg-hover">
                             <i class="fa-regular fa-calendar-xmark"></i>
-                            <a href="../holidays.php">Holidays</a>
+                            <a href="../Php/holidays.php">Holidays</a>
                         </div>
                         <div class="salary-slip flex-center grey-bg-hover">
                             <i class="fa-solid fa-toilet-paper"></i>
-                            <a href="../salary-slips.php">Salary Slips</a>
+                            <a href="../Php/salary-slips.php">Salary Slips</a>
                         </div>
                     </div>
                 </div>
