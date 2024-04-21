@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/sidebar.css">
-    <link rel="stylesheet" href="/CSS/Basic Details Css/experiance.css">
+    <link rel="stylesheet" href="../CSS/sidebar.css">
+    <link rel="stylesheet" href="../CSS/Basic_details_css/experiance.css">
     <!-- sidebar profile name font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -29,7 +29,7 @@
             <hr>
             <div class="sidebar-profile">
                 <div class="sidebar-profile-img ">
-                    <img src="/img/profile.jpg" alt="">
+                    <img src="../img/profile.jpg" alt="">
                 </div>
                 <div class="sidebar-profile-name">
                     <h6>Alexdar noel</h6>
@@ -39,27 +39,27 @@
                 <div class="sidebar-menus">
                     <div class="dashboard flex-center grey-bg-hover">
                         <i class="fa-sharp fa-solid fa-table-columns"></i>
-                        <a href="/Html/dashboard.html">Dashboard</a>
+                        <a href="../Php/dashboard.php">Dashboard</a>
                     </div>
                     <div class="attendance flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar"></i>
-                        <a href="/Html/attendance.html">Attendance</a>
+                        <a href="../Php/attendance.php">Attendance</a>
                     </div>
                     <div class="leaves flex-center grey-bg-hover">
                         <i class="fa-solid fa-person-walking-luggage"></i>
-                        <a href="/Html/leaves.html">Leaves</a>
+                        <a href="../Php/leaves.php">Leaves</a>
                     </div>
                     <div class="basic-details flex-center grey-bg-hover">
                         <i class="fa-regular fa-address-card"></i>
-                        <a href="../Basic Details Html/basic-details.html">Basic Details</a>
+                        <a href="../Php/basic-details.php">Basic Details</a>
                     </div>
                     <div class="holidays flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar-xmark"></i>
-                        <a href="/Html/holidays.html">Holidays</a>
+                        <a href="../Php/holidays.php">Holidays</a>
                     </div>
                     <div class="salary-slip flex-center grey-bg-hover">
                         <i class="fa-solid fa-toilet-paper"></i>
-                        <a href="/Html/salary-slips.html">Salary Slips</a>
+                        <a href="../Php/salary-slips.php">Salary Slips</a>
                     </div>
                 </div>
             </div>
@@ -125,13 +125,13 @@
             <!-- basic details text end -->
             <!-- basic details list start -->
             <div class="basic-details-list">
-                <a href="../Basic Details Html/basic-details.html">Basic Details</a>
-                <a href="../Basic Details Html/documents.html">Documents</a>
-                <a href="../Basic Details Html/address.html">Address</a>
-                <a href="../Basic Details Html/education.html">Education</a>
-                <a class="experiance-href" href="../Basic Details Html/experiance.html">Experiance</a>
-                <a href="../Basic Details Html/bank-details.html">Bank Details</a>
-                <a href="../Basic Details Html/family-details.html">Family Details</a>
+                <a href="../Php/basic-details.php">Basic Details</a>
+                <a href="../Php/documents.php">Documents</a>
+                <a href="../Php/address.php">Address</a>
+                <a href="../Php/education.php">Education</a>
+                <a class="experiance-href" href="../Php/experiance.php">Experiance</a>
+                <a href="../Php/bank-details.php">Bank Details</a>
+                <a href="../Php/family-details.php">Family Details</a>
             </div>
             <!-- basic details list end -->
             <!-- experiance list -->
@@ -185,8 +185,8 @@
             <!-- experiance list -->
         </div>
     </div>
-    <script src="/JS/applyleave.js"></script>
-    <script src="/JS/Basic-details-js/experiance.js"></script>
+    <script src="../JS/applyleave.js"></script>
+    <script src="../JS/Basic-details-js/experiance.js"></script>
 </body>
 
 </html>

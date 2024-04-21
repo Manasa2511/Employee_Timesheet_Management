@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE Php>
+<Php lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/dashboard.css">
     <link rel="stylesheet" href="../CSS/sidebar.css">
+    <link rel="stylesheet" href="/Basic_details_css/basic-details.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- sidebar profile name font -->
     <link
@@ -40,27 +41,27 @@
                 <div class="sidebar-menus">
                     <div class="dashboard flex-center grey-bg-hover">
                         <i class="fa-sharp fa-solid fa-table-columns active-desgin"></i>
-                        <a class="active-desgin" href="../Html/dashboard.html">Dashboard</a>
+                        <a class="active-desgin" href="/Php/dashboard.php">Dashboard</a>
                     </div>
                     <div class="attendance flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar"></i>
-                        <a href="../Html/attendance.html">Attendance</a>
+                        <a href="../Php/attendance.php">Attendance</a>
                     </div>
                     <div class="leaves flex-center grey-bg-hover">
                         <i class="fa-solid fa-person-walking-luggage"></i>
-                        <a href="../Html/leaves.html">Leaves</a>
+                        <a href="../Php/leaves.php">Leaves</a>
                     </div>
                     <div class="basic-details flex-center grey-bg-hover">
                         <i class="fa-regular fa-address-card"></i>
-                        <a href="../Php/Basic_details_html/basic-details.php">Basic Details</a>
+                        <a href="../Php/basic-details.php">Basic Details</a>
                     </div>
                     <div class="holidays flex-center grey-bg-hover">
                         <i class="fa-regular fa-calendar-xmark"></i>
-                        <a href="../Html/holidays.html">Holidays</a>
+                        <a href="../Php/holidays.php">Holidays</a>
                     </div>
                     <div class="salary-slip flex-center grey-bg-hover">
                         <i class="fa-solid fa-toilet-paper"></i>
-                        <a href="../Html/salary-slips.html">Salary Slips</a>
+                        <a href="../Php/salary-slips.php">Salary Slips</a>
                     </div>
                 </div>
             </div>
@@ -238,4 +239,4 @@
     <script src="../JS/dashboard.js"></script>
 </body>
 
-</html>
+</Php>
